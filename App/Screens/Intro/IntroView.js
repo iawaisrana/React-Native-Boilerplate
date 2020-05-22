@@ -1,0 +1,116 @@
+/* eslint-disable react/prop-types */
+import React, {useState} from 'react';
+import {ImageBackground, Text, TouchableOpacity, View} from 'react-native';
+import AppIntroSlider from 'react-native-app-intro-slider';
+import Icon from 'react-native-vector-icons/Ionicons';
+import {withTheme} from 'react-native-paper';
+import {useSelector, useDispatch} from 'react-redux';
+import {useNavigation} from '@react-navigation/native';
+import {useTranslation} from 'react-i18next';
+import styles from './styles';
+
+const IntroView = props => {
+  const {colors, fonts} = props.theme;
+  console.log(fonts);
+  const [t, i18n] = useTranslation();
+  const dispatch = useDispatch();
+  const navigation = useNavigation();
+
+  const i18 = key => {
+    return t(key);
+  };
+
+  const slides = [
+    {
+      key: 'screen1',
+      title: i18('Intro.title1'),
+      text: i18('Intro.description1'),
+      image: require('../../Assets/Images/slider1.png'),
+      backgroundColor: 'white',
+    },
+    {
+      key: 'screen2',
+      title: i18('Intro.title2'),
+      text: i18('Intro.description2'),
+      image: require('../../Assets/Images/slider2.png'),
+      backgroundColor: 'white',
+    },
+    {
+      key: 'screen3',
+      title: i18('Intro.title3'),
+      text: i18('Intro.description3'),
+      image: require('../../Assets/Images/slider3.png'),
+      backgroundColor: 'white',
+    },
+  ];
+
+  const _renderItem = ({item, index}) => {
+    return (
+      <ImageBackground
+        style={{flex: 1, paddingHorizontal: 40}}
+        source={item.image}
+        resizeMode="cover">
+        <TouchableOpacity
+          style={{position: 'absolute', top: 20, right: 20}}
+          onPress={() => navigation.navigate('App')}>
+          <Text
+            style={{
+              ...fonts.normal,
+              color: colors.white,
+            }}>
+            {i18('Intro.skip')}
+          </Text>
+        </TouchableOpacity>
+
+        <Text
+          style={{
+            color: 'white',
+            fontSize: 24,
+            textAlign: 'center',
+            marginTop: 50,
+            fontWeight: 'bold',
+          }}>
+          {item.title}
+        </Text>
+        <Text
+          style={{
+            color: 'white',
+            fontSize: 16,
+            textAlign: 'center',
+            marginTop: 20,
+          }}>
+          {item.text}
+        </Text>
+      </ImageBackground>
+    );
+  };
+
+  const _renderNextButton = () => {
+    return (
+      <View style={styles.buttonCircle}>
+        <Icon name="md-arrow-round-forward" color={colors.white} size={24} />
+      </View>
+    );
+  };
+  const _renderDoneButton = () => {
+    return (
+      <View style={styles.buttonCircle}>
+        <Icon name="md-checkmark" color={colors.white} size={24} />
+      </View>
+    );
+  };
+
+  return (
+    <AppIntroSlider
+      data={slides}
+      showNextButton={false}
+      showDoneButton={false}
+      onSkip={() => props.navigation.navigate('Home')}
+      activeDotStyle={{backgroundColor: colors.primary}}
+      renderItem={_renderItem}
+      renderDoneButton={_renderDoneButton}
+      renderNextButton={_renderNextButton}
+    />
+  );
+};
+export default withTheme(IntroView);
