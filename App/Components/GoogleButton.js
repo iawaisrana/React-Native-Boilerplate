@@ -3,7 +3,7 @@ import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {withTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
-import {gmailLoginRequest} from '../Actions/Auth';
+import {googleLoginRequest} from '../Actions/Auth';
 import {useDispatch, useSelector} from 'react-redux';
 
 import {GoogleSignin, statusCodes} from '@react-native-community/google-signin';
@@ -15,20 +15,18 @@ GoogleSignin.configure({
 
 function GoogleButton(props) {
   const dispatch = useDispatch();
-  const loading = useSelector(state => state.loading.isLoadingVisible);
-  const {colors, fonts, screen, introScreen} = props.theme;
+  const isLoading = useSelector(state => state.loading.isLoading);
+  const {colors, fonts, screen} = props.theme;
   const [t, i18n] = useTranslation();
 
   const i18 = key => {
     return t(key);
   };
+
   const googleLogin = async () => {
     try {
       await GoogleSignin.hasPlayServices();
-      GoogleSignin.configure({
-        webClientId:
-          '345493290412-thkh2i7abd0kv8ngn55vblag6gj7qa40.apps.googleusercontent.com',
-      });
+
       const userInfo = await GoogleSignin.signIn();
       let token = await GoogleSignin.getTokens();
       console.log('userInfo', userInfo);
@@ -44,7 +42,7 @@ function GoogleButton(props) {
         },
       };
       console.log('before dispatch', data);
-      dispatch(gmailLoginRequest(data));
+      //dispatch(googleLoginRequest(data));
       console.log('After dispatch', data);
     } catch (error) {
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
@@ -61,17 +59,12 @@ function GoogleButton(props) {
 
   return (
     <TouchableOpacity
-      disabled={loading ? true : false}
+      disabled={isLoading ? true : false}
       onPress={() => googleLogin()}
       style={{width: '100%'}}>
-      <View
-        style={[
-          introScreen.button,
-          {backgroundColor: colors.gColor, ...props.style},
-        ]}>
-        <Text style={introScreen.buttonText}>
-          {' '}
-          {i18('IntroScreen.continueWithGmail')}
+      <View style={styles.button}>
+        <Text style={{color: colors.white}}>
+          {i18('Component.continueWithGoogle')}
         </Text>
       </View>
     </TouchableOpacity>
@@ -81,9 +74,10 @@ function GoogleButton(props) {
 export default withTheme(GoogleButton);
 
 const styles = StyleSheet.create({
-  googleButton: {
-    width: '100%',
-    height: 54,
+  button: {
+    width: '90%',
+    height: 50,
+    borderRadius: 30,
     shadowColor: 'black',
     shadowOffset: {
       width: 0,
@@ -92,10 +86,11 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 2,
     elevation: 2,
-    borderRadius: 5,
-    flexDirection: 'row',
-    backgroundColor: '#d50000',
     alignSelf: 'center',
-    marginTop: 10,
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+    marginTop: 15,
+    backgroundColor: '#DD4B39',
   },
 });

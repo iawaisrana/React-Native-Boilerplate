@@ -3,7 +3,10 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <RNGoogleSignin/RNGoogleSignin.h>
 #import <Firebase.h>
+#import "RNFirebaseNotifications.h"
+#import "RNFirebaseMessaging.h"
 #import <CodePush/CodePush.h>
 #if DEBUG
 #import <FlipperKit/FlipperClient.h>
@@ -29,6 +32,8 @@ static void InitializeFlipper(UIApplication *application) {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 if ([FIRApp defaultApp] == nil) {
   [FIRApp configure];
+  [[UNUserNotificationCenter currentNotificationCenter] setDelegate:self];
+  [RNFirebaseNotifications configure];
 }
 
   
@@ -49,6 +54,23 @@ if ([FIRApp defaultApp] == nil) {
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options {
+  return [RNGoogleSignin application:application openURL:url options:options];
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+  [[RNFirebaseNotifications instance] didReceiveLocalNotification:notification];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(nonnull NSDictionary *)userInfo
+fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler{
+  [[RNFirebaseNotifications instance] didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+}
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+  [[RNFirebaseMessaging instance] didRegisterUserNotificationSettings:notificationSettings];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

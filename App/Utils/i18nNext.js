@@ -5,6 +5,7 @@ import i18next from 'i18next';
 import {initReactI18next, useTranslation} from 'react-i18next';
 import en from '../Assets/Localize/en.json';
 import fr from '../Assets/Localize/fr.json';
+
 const LOCALE_PERSISTENCE_KEY = 'language';
 
 const languageDetector = {
@@ -18,7 +19,7 @@ const languageDetector = {
       // Return detected locale or default language
       return language('en');
     }
-    language(persistedLocale);
+    return language(persistedLocale);
   },
   init: () => {},
   cacheUserLanguage: locale => {

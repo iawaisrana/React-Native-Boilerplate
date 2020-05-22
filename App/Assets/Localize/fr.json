@@ -10,10 +10,21 @@
   },
 
   "Home": {
-    "title": "Home"
+    "title": "Accueil"
   },
 
   "Drawer": {
     "changeLanguage": "Changer de langue"
+  },
+
+  "BottomTab": {
+    "search": "Chercher",
+    "home": "Accueil",
+    "profile": "Profil"
+  },
+
+  "Component": {
+    "continueWithFacebook": "Continuer avec Facebook",
+    "continueWithGoogle": "Continuer avec Google"
   }
 }

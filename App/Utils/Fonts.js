@@ -23,4 +23,8 @@ export default StyleSheet.create({
   normal: {
     fontSize: size.regular,
   },
+  bold: {
+    fontSize: size.regular,
+    fontWeight: 'bold',
+  },
 });

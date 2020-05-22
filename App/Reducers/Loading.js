@@ -1,20 +1,20 @@
 import * as types from '../Actions/types';
 
 const initialState = {
-  loading: false,
+  isLoading: false,
 };
 const loadingReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.LOADING_ENABLE_LOADER: {
       return {
         ...state,
-        loading: true,
+        isLoading: true,
       };
     }
     case types.LOADING_DISABLE_LOADER: {
       return {
         ...state,
-        loading: false,
+        isLoading: false,
       };
     }
 

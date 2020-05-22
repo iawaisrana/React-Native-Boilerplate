@@ -15,5 +15,16 @@
 
   "Drawer": {
     "changeLanguage": "Change Language"
+  },
+
+  "BottomTab": {
+    "search": "Search",
+    "home": "Home",
+    "profile": "Profile"
+  },
+
+  "Component": {
+    "continueWithFacebook": "Continue With Facebook",
+    "continueWithGoogle": "Continue With Google"
   }
 }

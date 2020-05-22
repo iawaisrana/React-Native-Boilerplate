@@ -148,12 +148,10 @@ android {
     }
     signingConfigs {
         debug {
-            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
-                storeFile file(MYAPP_UPLOAD_STORE_FILE)
-                storePassword MYAPP_UPLOAD_STORE_PASSWORD
-                keyAlias MYAPP_UPLOAD_KEY_ALIAS
-                keyPassword MYAPP_UPLOAD_KEY_PASSWORD
-            }
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
         }
         release {
             if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
@@ -216,9 +214,12 @@ android {
         implementation fileTree(dir: "libs", include: ["*.jar"])
         //noinspection GradleDynamicVersion
         implementation "com.facebook.react:react-native:+"  // From node_modules
-          implementation 'com.android.support:multidex:1.0.3'
-          implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+        implementation 'com.android.support:multidex:1.0.3'
+        implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
         implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+        implementation "com.google.android.gms:play-services-base:17.0.0"
+        implementation "com.google.firebase:firebase-core:16.0.9"
+        implementation "com.google.firebase:firebase-messaging:20.0.0"
 
         debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
             exclude group: 'com.facebook.fbjni'
@@ -248,7 +249,8 @@ android {
         into 'libs'
     }
 
-    apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle");
-    applyNativeModulesAppBuildGradle(project)
-apply plugin: 'com.google.gms.google-services'
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle");
+applyNativeModulesAppBuildGradle(project)
+apply plugin: 'com.google.gms.google-services';
+
 

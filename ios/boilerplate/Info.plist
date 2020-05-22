@@ -42,7 +42,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>CodePushDeploymentKey</key>
-	<string>ccccccccccc</string>
+	<string>$(CodePushDeploymentKey)</string>
 	<key>FacebookAppID</key>
 	<string>2605056053083737</string>
 	<key>FacebookDisplayName</key>
@@ -75,6 +75,28 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AntDesign.ttf</string>
+		<string>Entypo.ttf</string>
+		<string>EvilIcons.ttf</string>
+		<string>Feather.ttf</string>
+		<string>FontAwesome.ttf</string>
+		<string>FontAwesome5_Brands.ttf</string>
+		<string>FontAwesome5_Regular.ttf</string>
+		<string>FontAwesome5_Solid.ttf</string>
+		<string>Foundation.ttf</string>
+		<string>Ionicons.ttf</string>
+		<string>MaterialIcons.ttf</string>
+		<string>MaterialCommunityIcons.ttf</string>
+		<string>SimpleLineIcons.ttf</string>
+		<string>Octicons.ttf</string>
+		<string>Zocial.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -87,23 +109,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-  <key>UIAppFonts</key>
-  <array>
-      <string>AntDesign.ttf</string>
-      <string>Entypo.ttf</string>
-      <string>EvilIcons.ttf</string>
-      <string>Feather.ttf</string>
-      <string>FontAwesome.ttf</string>
-      <string>FontAwesome5_Brands.ttf</string>
-      <string>FontAwesome5_Regular.ttf</string>
-      <string>FontAwesome5_Solid.ttf</string>
-      <string>Foundation.ttf</string>
-      <string>Ionicons.ttf</string>
-      <string>MaterialIcons.ttf</string>
-      <string>MaterialCommunityIcons.ttf</string>
-      <string>SimpleLineIcons.ttf</string>
-      <string>Octicons.ttf</string>
-      <string>Zocial.ttf</string>
-  </array>
 </dict>
 </plist>

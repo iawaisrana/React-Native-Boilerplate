@@ -4,12 +4,12 @@ import React, {Suspense, useEffect} from 'react';
 import {Platform, SafeAreaView, Appearance} from 'react-native';
 import {LightTheme, DarkTheme} from './Utils';
 import AppNavigator from './Navigation';
+import PushNotifications from './PushNotifications';
 import {Provider as PaperProvider} from 'react-native-paper';
 import {Provider} from 'react-redux';
 import {Root} from 'native-base';
 import {persistor, store} from './Store/Store';
 import {PersistGate} from 'redux-persist/integration/react';
-
 import SplashScreen from 'react-native-splash-screen';
 import codePush from 'react-native-code-push';
 
@@ -31,6 +31,7 @@ const App = () => {
             <Provider store={store}>
               <PersistGate loading={null} persistor={persistor}>
                 <AppNavigator />
+                <PushNotifications />
               </PersistGate>
             </Provider>
           </PaperProvider>

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
+import {Text, TouchableOpacity, View, StyleSheet} from 'react-native';
 import {
   AccessToken,
   GraphRequest,
@@ -8,13 +8,13 @@ import {
   LoginManager,
 } from 'react-native-fbsdk';
 import {useDispatch, useSelector} from 'react-redux';
-import {fbLoginRequest} from '../Actions/Auth';
+import {facebookLoginRequest} from '../Actions/Auth';
 import {withTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
 
-function FbButton(props) {
+function FacebookButton(props) {
   const dispatch = useDispatch();
-  const loading = useSelector(state => state.loading.isLoadingVisible);
+  const isLoading = useSelector(state => state.loading.isLoading);
   const {screen, colors, introScreen} = props.theme;
   const [t, i18n] = useTranslation();
 
@@ -53,7 +53,7 @@ function FbButton(props) {
             },
           };
           console.log('facebook action', data);
-          dispatch(fbLoginRequest(data));
+          // dispatch(facebookLoginRequest(data));
           console.log('After action', data);
         }
       },
@@ -82,26 +82,41 @@ function FbButton(props) {
   };
 
   return (
-    <View>
-      <TouchableOpacity
-        disabled={loading ? true : false}
-        onPress={() => {
-          fbLogin();
-        }}
-        style={{width: '100%'}}>
-        >
-        <View
-          style={[
-            introScreen.button,
-            {backgroundColor: colors.fbColor, width: '100%', ...props.style},
-          ]}>
-          <Text style={introScreen.buttonText}>
-            {i18('IntroScreen.continueWithFacebook')}
-          </Text>
-        </View>
-      </TouchableOpacity>
-    </View>
+    <TouchableOpacity
+      disabled={isLoading ? true : false}
+      onPress={() => {
+        fbLogin();
+      }}
+      style={{width: '100%'}}>
+      <View style={styles.button}>
+        <Text style={{color: colors.white}}>
+          {i18('Component.continueWithFacebook')}
+        </Text>
+      </View>
+    </TouchableOpacity>
   );
 }
 
-export default withTheme(FbButton);
+export default withTheme(FacebookButton);
+
+const styles = StyleSheet.create({
+  button: {
+    width: '90%',
+    height: 50,
+    borderRadius: 30,
+    shadowColor: 'black',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 2,
+    elevation: 2,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+    marginTop: 15,
+    backgroundColor: '#3B5999',
+  },
+});
