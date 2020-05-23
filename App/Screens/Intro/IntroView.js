@@ -9,14 +9,14 @@ import {useNavigation} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
 import styles from './styles';
 
-const IntroView = props => {
+const IntroView = (props) => {
   const {colors, fonts} = props.theme;
   console.log(fonts);
   const [t, i18n] = useTranslation();
   const dispatch = useDispatch();
   const navigation = useNavigation();
 
-  const i18 = key => {
+  const i18 = (key) => {
     return t(key);
   };
 
@@ -25,21 +25,18 @@ const IntroView = props => {
       key: 'screen1',
       title: i18('Intro.title1'),
       text: i18('Intro.description1'),
-      image: require('../../Assets/Images/slider1.png'),
       backgroundColor: 'white',
     },
     {
       key: 'screen2',
       title: i18('Intro.title2'),
       text: i18('Intro.description2'),
-      image: require('../../Assets/Images/slider2.png'),
       backgroundColor: 'white',
     },
     {
       key: 'screen3',
       title: i18('Intro.title3'),
       text: i18('Intro.description3'),
-      image: require('../../Assets/Images/slider3.png'),
       backgroundColor: 'white',
     },
   ];

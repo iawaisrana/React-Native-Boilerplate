@@ -3,7 +3,7 @@ export default {
   white: '#ffffff',
   black: '#000000',
   text: '#212529',
-  primary: 'black',
+  primary: '#010D36',
   success: '#28a745',
   error: '#dc3545',
   background: '#ffffff',
