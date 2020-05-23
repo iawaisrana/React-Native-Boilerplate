@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* boilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* boilerplateTests.m */; };
+		04BF00A52478F2F00033FA00 /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BF00A42478F2F00033FA00 /* AppCenter-Config.plist */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -47,6 +48,7 @@
 		00E356F21AD99517003FC87E /* boilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boilerplateTests.m; sourceTree = "<group>"; };
 		01701C05AD85D9D6BA0F8C40 /* Pods-boilerplate-boilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boilerplate-boilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-boilerplate-boilerplateTests/Pods-boilerplate-boilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		04BCF4DE24786D3700D19063 /* boilerplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = boilerplate.entitlements; path = boilerplate/boilerplate.entitlements; sourceTree = "<group>"; };
+		04BF00A42478F2F00033FA00 /* AppCenter-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppCenter-Config.plist"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = boilerplate/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = boilerplate/AppDelegate.m; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				04BF00A42478F2F00033FA00 /* AppCenter-Config.plist */,
 				13B07FAE1A68108700A75B9A /* boilerplate */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* boilerplateTests */,
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				04BF00A52478F2F00033FA00 /* AppCenter-Config.plist in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				18F9047B24753A1F00E6D338 /* GoogleService-Info.plist in Resources */,
 			);

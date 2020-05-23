@@ -4,6 +4,24 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.3.0)
   - AppAuth/Core (1.3.0)
   - AppAuth/ExternalUserAgent (1.3.0)
+  - appcenter-analytics (3.0.2):
+    - AppCenter/Analytics
+    - AppCenterReactNativeShared
+    - React
+  - appcenter-core (3.0.2):
+    - AppCenterReactNativeShared
+    - React
+  - appcenter-crashes (3.0.2):
+    - AppCenter/Crashes
+    - AppCenterReactNativeShared
+    - React
+  - AppCenter/Analytics (3.1.1):
+    - AppCenter/Core
+  - AppCenter/Core (3.1.1)
+  - AppCenter/Crashes (3.1.1):
+    - AppCenter/Core
+  - AppCenterReactNativeShared (3.0.2):
+    - AppCenter/Core (= 3.1.1)
   - Base64 (1.1.2)
   - boost-for-react-native (1.63.0)
   - BVLinearGradient (2.5.6):
@@ -496,6 +514,9 @@ PODS:
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - appcenter-analytics (from `../node_modules/appcenter-analytics/ios`)
+  - appcenter-core (from `../node_modules/appcenter/ios`)
+  - appcenter-crashes (from `../node_modules/appcenter-crashes/ios`)
   - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - CodePush (from `../node_modules/react-native-code-push`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -567,6 +588,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AppAuth
+    - AppCenter
+    - AppCenterReactNativeShared
     - Base64
     - boost-for-react-native
     - CocoaAsyncSocket
@@ -611,6 +634,12 @@ SPEC REPOS:
     - YogaKit
 
 EXTERNAL SOURCES:
+  appcenter-analytics:
+    :path: "../node_modules/appcenter-analytics/ios"
+  appcenter-core:
+    :path: "../node_modules/appcenter/ios"
+  appcenter-crashes:
+    :path: "../node_modules/appcenter-crashes/ios"
   BVLinearGradient:
     :path: "../node_modules/react-native-linear-gradient"
   CodePush:
@@ -700,6 +729,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
+  AppCenter: 513d32888854d67d8cfbd3a8db16aeb5fb2e2a75
+  appcenter-analytics: f819aa9bd41c43b8b9ae53aa5dfd862b48a65f50
+  appcenter-core: 74a3db7d48a720fc3a70e0cf5cbda720decac008
+  appcenter-crashes: 0aea510872e4f9186553941b75ba0e9e6c7d9e07
+  AppCenterReactNativeShared: c4eb2ad593c32fbc2fc5f2ea9f5cf1faae61c182
   Base64: cecfb41a004124895a7bcee567a89bae5a89d49b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
