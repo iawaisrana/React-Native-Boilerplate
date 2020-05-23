@@ -1,8 +1,11 @@
-import { createStore, applyMiddleware } from "redux";
-import { createLogger } from "redux-logger";
-import createSagaMiddleware from "redux-saga";
-import { persistStore, persistReducer } from "redux-persist";
-import AsyncStorage from "@react-native-community/async-storage";
+import {applyMiddleware, createStore} from 'redux';
+import createSagaMiddleware from 'redux-saga';
+import {persistReducer, persistStore} from 'redux-persist';
+import AsyncStorage from '@react-native-community/async-storage';
+// Imports: Redux Root Reducer
+import rootReducer from '../Reducers/index';
+// Imports: Redux Root Saga
+import rootSaga from '../Sagas/index';
 
 const persistConfig = {
   key: "root",
@@ -10,10 +13,6 @@ const persistConfig = {
   blacklist: ["loading"]
 };
 
-// Imports: Redux Root Reducer
-import rootReducer from "../Reducers/index";
-// Imports: Redux Root Saga
-import rootSaga from "../Sagas/index";
 // Middleware: Redux Saga
 const sagaMiddleware = createSagaMiddleware();
 //persist

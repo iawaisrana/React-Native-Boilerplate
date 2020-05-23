@@ -1,12 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import {
-  ScrollView,
-  Text,
-  View,
-  TouchableOpacity,
-  SafeAreaView,
-} from 'react-native';
+import {I18nManager, SafeAreaView, ScrollView, Text, TouchableOpacity} from 'react-native';
 import {withTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
 import FastImage from 'react-native-fast-image';
@@ -22,7 +16,22 @@ function DrawerComponent(props) {
     return t(key);
   };
 
-  const changeLanguage = async () => {
+  // this should be called for language that need RTL for example for Arabic
+  const changeLanguageWithRTL = async () => {
+    let currentLanguage = await AsyncStorage.getItem('language');
+
+    if (currentLanguage == 'en') {
+      await AsyncStorage.setItem('language', 'fr');
+      I18nManager.forceRTL(true);
+      RNRestart.Restart();
+    } else {
+      await AsyncStorage.setItem('language', 'en');
+      I18nManager.forceRTL(false);
+      RNRestart.Restart();
+    }
+  };
+
+  const changeLanguageWithoutRTL = async () => {
     let currentLanguage = await AsyncStorage.getItem('language');
 
     if (currentLanguage == 'en') {
@@ -52,7 +61,7 @@ function DrawerComponent(props) {
             paddingLeft: 15,
             alignItems: 'center',
           }}
-          onPress={() => changeLanguage()}>
+          onPress={() => changeLanguageWithRTL()}>
           <FontAwesome name="language" color={colors.primary} size={25} />
           <Text
             style={{

@@ -13,7 +13,11 @@
     "android:production-release": "ENVFILE=.env.production react-native run-android --variant=release",
     "android:staging-release": "ENVFILE=.env.staging  react-native run-android --variant=release",
     "test": "jest",
-    "lint": "eslint ."
+    "prettier-fix": "prettier --write **/*.js",
+    "prettier-check": "prettier --list-different **/*.js",
+    "lint-fix": "eslint --fix .",
+    "lint-check": "eslint .",
+    "rename": "react-native-rename"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.9.0",
@@ -27,6 +31,7 @@
     "appcenter": "3.0.2",
     "appcenter-analytics": "3.0.2",
     "appcenter-crashes": "3.0.2",
+    "axios": "^0.19.2",
     "formik": "^2.1.4",
     "i18next": "^19.4.3",
     "moment": "^2.24.0",
@@ -74,6 +79,8 @@
     "eslint": "6.8.0",
     "jest": "24.9.0",
     "metro-react-native-babel-preset": "0.58.0",
+    "prettier": "^2.0.5",
+    "react-native-rename": "^2.4.1",
     "react-test-renderer": "16.11.0",
     "typescript": "^3.9.3"
   },

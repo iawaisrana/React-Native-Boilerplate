@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import 'react-native-gesture-handler';
 import React, {Suspense, useEffect} from 'react';
-import {Platform, SafeAreaView, Appearance} from 'react-native';
-import {LightTheme, DarkTheme} from './Utils';
+import {Appearance, Platform, SafeAreaView} from 'react-native';
+import {DarkTheme, LightTheme} from './Utils';
 import AppNavigator from './Navigation';
 import PushNotifications from './PushNotifications';
 import {Provider as PaperProvider} from 'react-native-paper';
@@ -15,6 +15,8 @@ import codePush from 'react-native-code-push';
 
 const App = () => {
   const colorScheme = Appearance.getColorScheme();
+
+  console.log(colorScheme);
 
   useEffect(() => {
     console.disableYellowBox = true;

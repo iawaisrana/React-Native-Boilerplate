@@ -1,4 +1,4 @@
-import {put, call} from 'redux-saga/effects';
+import {call, put} from 'redux-saga/effects';
 import loginUser from '../Api/Methods/Login';
 import * as authActions from '../Actions/Auth';
 import * as loadingAction from '../Actions/Loading';

@@ -1,4 +1,5 @@
-import * as types from "./types";
+import * as types from './types';
+
 export function enableLoading() {
   return {
     type: types.LOADING_ENABLE_LOADER

@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-import React, {useState} from 'react';
+import React from 'react';
 import {View} from 'react-native';
 import {withTheme} from 'react-native-paper';
-import {useSelector, useDispatch} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {useNavigation} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
-import {MenuHeader, FacebookButton, GoogleButton} from '../../Components';
+import {FacebookButton, GoogleButton, MenuHeader} from '../../Components';
 
 const HomeView = props => {
   const {colors} = props.theme;
@@ -18,7 +18,7 @@ const HomeView = props => {
   };
 
   return (
-    <View style={{flex: 1, backgroundColor: colors.white}}>
+    <View style={{flex: 1, backgroundColor: colors.background}}>
       <MenuHeader title={i18('Home.title')} {...props} />
       <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
         <FacebookButton />

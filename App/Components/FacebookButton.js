@@ -1,14 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import {Text, TouchableOpacity, View, StyleSheet} from 'react-native';
-import {
-  AccessToken,
-  GraphRequest,
-  GraphRequestManager,
-  LoginManager,
-} from 'react-native-fbsdk';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {AccessToken, GraphRequest, GraphRequestManager, LoginManager} from 'react-native-fbsdk';
 import {useDispatch, useSelector} from 'react-redux';
-import {facebookLoginRequest} from '../Actions/Auth';
 import {withTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
 

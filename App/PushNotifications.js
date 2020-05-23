@@ -1,6 +1,5 @@
 import React, {useEffect, useRef} from 'react';
 import firebase from 'react-native-firebase';
-import NavigationService from './Navigation/NavigationService';
 import NotificationPopup from 'react-native-push-notification-popup';
 import AsyncStorage from '@react-native-community/async-storage';
 import {withTheme} from 'react-native-paper';
@@ -10,10 +9,10 @@ var notificationListener = null;
 var notificationOpenedListener = null;
 var messageListener = null;
 
-const PushNotification = props => {
+const PushNotification = (props) => {
   const dispatch = useDispatch();
   const {colors, screen} = props.theme;
-  const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
   const popup = useRef(null);
 
@@ -66,7 +65,7 @@ const PushNotification = props => {
      * */
     notificationListener = firebase
       .notifications()
-      .onNotification(notification => {
+      .onNotification((notification) => {
         const {title, body} = notification;
         const showNotification = new firebase.notifications.Notification()
           .setNotificationId(notification._notificationId)
@@ -81,7 +80,7 @@ const PushNotification = props => {
      * */
     notificationOpenedListener = firebase
       .notifications()
-      .onNotificationOpened(notificationOpen => {
+      .onNotificationOpened((notificationOpen) => {
         const {title, body, data} = notificationOpen.notification;
         console.log(notificationOpen.notification);
       });
@@ -98,7 +97,7 @@ const PushNotification = props => {
     /*
      * Triggered for data only payload in foreground
      * */
-    messageListener = firebase.messaging().onMessage(message => {
+    messageListener = firebase.messaging().onMessage((message) => {
       //process data message
       console.log(message);
     });

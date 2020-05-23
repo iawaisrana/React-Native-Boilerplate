@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
-import React, {useState} from 'react';
-import {ImageBackground, Text, TouchableOpacity, View} from 'react-native';
+import React from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import {withTheme} from 'react-native-paper';
-import {useSelector, useDispatch} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {useNavigation} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
 import styles from './styles';
@@ -46,25 +46,29 @@ const IntroView = props => {
 
   const _renderItem = ({item, index}) => {
     return (
-      <ImageBackground
-        style={{flex: 1, paddingHorizontal: 40}}
-        source={item.image}
-        resizeMode="cover">
-        <TouchableOpacity
-          style={{position: 'absolute', top: 20, right: 20}}
-          onPress={() => navigation.navigate('App')}>
-          <Text
-            style={{
-              ...fonts.normal,
-              color: colors.white,
-            }}>
-            {i18('Intro.skip')}
-          </Text>
-        </TouchableOpacity>
+      <View
+        style={{
+          flex: 1,
+          paddingHorizontal: 40,
+          backgroundColor: colors.background,
+        }}>
+        {index < 2 && (
+          <TouchableOpacity
+            style={{position: 'absolute', top: 20, right: 20}}
+            onPress={() => navigation.navigate('App')}>
+            <Text
+              style={{
+                ...fonts.normal,
+                color: colors.primary,
+              }}>
+              {i18('Intro.skip')}
+            </Text>
+          </TouchableOpacity>
+        )}
 
         <Text
           style={{
-            color: 'white',
+            color: colors.primary,
             fontSize: 24,
             textAlign: 'center',
             marginTop: 50,
@@ -74,37 +78,43 @@ const IntroView = props => {
         </Text>
         <Text
           style={{
-            color: 'white',
+            color: colors.primary,
             fontSize: 16,
             textAlign: 'center',
             marginTop: 20,
           }}>
           {item.text}
         </Text>
-      </ImageBackground>
+      </View>
     );
   };
 
   const _renderNextButton = () => {
     return (
       <View style={styles.buttonCircle}>
-        <Icon name="md-arrow-round-forward" color={colors.white} size={24} />
+        <Ionicons
+          name="md-arrow-round-forward"
+          color={colors.white}
+          size={24}
+        />
       </View>
     );
   };
   const _renderDoneButton = () => {
     return (
-      <View style={styles.buttonCircle}>
-        <Icon name="md-checkmark" color={colors.white} size={24} />
-      </View>
+      <TouchableOpacity
+        style={styles.buttonCircle}
+        onPress={() => navigation.navigate('App')}>
+        <Ionicons name="md-checkmark" color={colors.white} size={24} />
+      </TouchableOpacity>
     );
   };
 
   return (
     <AppIntroSlider
       data={slides}
-      showNextButton={false}
-      showDoneButton={false}
+      showNextButton={true}
+      showDoneButton={true}
       onSkip={() => props.navigation.navigate('Home')}
       activeDotStyle={{backgroundColor: colors.primary}}
       renderItem={_renderItem}

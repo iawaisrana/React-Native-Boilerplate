@@ -1,8 +1,7 @@
 import React from 'react';
-import {Text, View, TouchableOpacity} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import i18next from 'i18next';
-import {initReactI18next, useTranslation} from 'react-i18next';
+import {initReactI18next} from 'react-i18next';
 import en from '../Assets/Localize/en.json';
 import fr from '../Assets/Localize/fr.json';
 
