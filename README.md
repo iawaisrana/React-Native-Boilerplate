@@ -132,7 +132,7 @@ Assuming you have all the requirements installed, you can setup and run the proj
 
 This project is released under the [MIT License](LICENSE).
 
-## Why this boilerplates?
+## Why this boilerplate?
 
 I looked into existing boilerplates before starting this project, and while many of them are awesome, But every boilerplate was lacking something, so I come up with a boilerplate that has all the features that modern app needed. For example
 
