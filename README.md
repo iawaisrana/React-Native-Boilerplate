@@ -29,11 +29,11 @@ If you find this boilerplate useful then please give the repository a star
 
 The main purpose of the Architecture of the boilerplate is the separation of concerns
 
-- Presentational components are separated from Screens.
+- Presentational **components** are separated from **screens**.
 
-- State is managed using global [Redux](https://redux.js.org/) stores.
+- **State** is managed using global [Redux](https://redux.js.org/) stores.
 
-- Application side-effects (API calls, etc.) are separated from UI and state manipulation using [Redux Saga](https://redux-saga.js.org/).
+- Application side-effects (API calls, etc.) are separated from **UI** and **state** manipulation using [Redux Saga](https://redux-saga.js.org/).
 
 ## Content
 
