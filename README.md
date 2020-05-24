@@ -15,7 +15,7 @@
 [![Multilingual Support](https://img.shields.io/badge/Multilingual%20Support-Yes-green.svg)](https://shields.io/)
 [![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://shields.io/)
 
-## React-Native-Boilerplate
+# React-Native-Boilerplate
 
 This project is a [React Native](https://facebook.github.io/react-native/) boilerplate that can be used to kickstart a mobile application.
 
@@ -24,3 +24,13 @@ The boilerplate provides **a design optimized for developing reliable cross-plat
 ```
 If you find this boilerplate useful then please give the repository a star
 ```
+
+## Design
+
+The main purpose of the design of the boilerplate is the separation of concerns
+
+- **Presentational components are separated from Screens**.
+  
+- **State is managed using global [Redux](https://redux.js.org/) stores**.
+  
+- **Application side-effects (API calls, etc.) are separated from UI and state manipulation using [Redux Saga](https://redux-saga.js.org/)**.
