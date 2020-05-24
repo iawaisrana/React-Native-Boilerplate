@@ -104,7 +104,6 @@ You can now create a new git repository for your project (using `git init`) and 
 Assuming you have all the requirements installed, you can setup and run the project by running:
 
 - `yarn` or `npm install` to install the dependencies
-- Create your [configuration file `App/Config/index.js`](App/Config) from `index.dev.js` (if you are in dev environment) and fill the missing values
 - Run the following steps for your platform
 
 ### Android
