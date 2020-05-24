@@ -132,6 +132,20 @@ Assuming you have all the requirements installed, you can setup and run the proj
 
 This project is released under the [MIT License](LICENSE).
 
-## Alternative boilerplates
+## Why this boilerplates?
 
-I looked into existing boilerplates before starting this project, and while many of them are awesome, But every boilerplate was lacking something, so, I come up with a boilerplate that has all the features that modern app needed.
+I looked into existing boilerplates before starting this project, and while many of them are awesome, But every boilerplate was lacking something, so I come up with a boilerplate that has all the features that modern app needed. For example
+
+- Great Design
+- React Navigation 5
+- Redux
+- Redux Saga
+- Redux Persist
+- Firebase SDK
+- Facebook SDK
+- Google Signin SDK
+- Code-Push SDK
+- Push Notifications
+- Dark Theme Support
+- Multilingual Support
+- Splash Screen Support
