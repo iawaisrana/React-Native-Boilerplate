@@ -54,3 +54,16 @@ The boilerplate contains:
 - [Dark Theme Support](https://callstack.github.io/react-native-paper/theming.html) with a [`DarkTheme`](App/Utils/DarkTheme.js)
 - [axios](https://github.com/axios/axios) to make API calls (v0.19.0)
 - [prettier](https://prettier.io/) and [eslint](https://eslint.org/) preconfigured for React Native
+
+## Directory layout
+
+- [`App/Components`](App/Components): presentational components
+- [`App/Screens`](App/Screens): the application's screens
+- [`App/Assets`](App/Assets): assets (image, audio files, language ...) used by the application
+- [`App/Navigation`](App/Navigation): react navigation setting
+- [`App/Sagas`](App/Sagas): redux sagas
+- [`App/Actions`](App/Action): redux actions
+- [`App/Reducers`](App/Reducers): redux reducers
+- [`App/Api`](App/Api): application services, e.g. API clients
+- [`App/Stores`](App/Stores): redux [actions, reducers and stores](https://redux.js.org/basics)
+- [`App/Utils`](App/Utils): language and styles helpers for the application
