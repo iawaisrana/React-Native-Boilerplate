@@ -25,18 +25,16 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb2605056053083737</string>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>com.googleusercontent.apps.329872331113-un4ubhb26mis4o3v2ghhq1jd0te00je7</string>
-			</array>
+			<array/>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
@@ -44,7 +42,7 @@
 	<key>CodePushDeploymentKey</key>
 	<string>$(CodePushDeploymentKey)</string>
 	<key>FacebookAppID</key>
-	<string>2605056053083737</string>
+	<string></string>
 	<key>FacebookDisplayName</key>
 	<string>Start Up</string>
 	<key>LSApplicationQueriesSchemes</key>

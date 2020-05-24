@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">boilerplate</string>
-    <string name="facebook_app_id">2605056053083737</string>
-    <string name="fb_login_protocol_scheme">fb2605056053083737</string>
+    <string name="facebook_app_id">
+        <!-->inset app id here<-->
+    </string>
+    <string name="fb_login_protocol_scheme">
+        <!-->insert protocl scheme here<-->
+    </string>
     <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
     <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ALWAYS_SEND</string>
 </resources>
