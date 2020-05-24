@@ -19,28 +19,28 @@
 
 This project is a [React Native](https://facebook.github.io/react-native/) boilerplate that can be used to kickstart a mobile application.
 
-The boilerplate provides **a design optimized for developing reliable cross-platform mobile applications** through the separation of concerns between the UI and business logic. It is remarkably documented so that each section of code that lands in your application can be understood and used.
+The boilerplate provides **a architecture optimized for developing reliable cross-platform mobile applications** through the separation of concerns between the UI and business logic. It is remarkably documented so that each section of code that lands in your application can be understood and used.
 
 ```
 If you find this boilerplate useful then please give the repository a star
 ```
 
-## Design
+## Architecture
 
-The main purpose of the design of the boilerplate is the separation of concerns
+The main purpose of the Architecture of the boilerplate is the separation of concerns
 
-- **Presentational components are separated from Screens**.
+- Presentational components are separated from Screens.
 
-- **State is managed using global [Redux](https://redux.js.org/) stores**.
+- State is managed using global [Redux](https://redux.js.org/) stores.
 
-- **Application side-effects (API calls, etc.) are separated from UI and state manipulation using [Redux Saga](https://redux-saga.js.org/)**.
+- Application side-effects (API calls, etc.) are separated from UI and state manipulation using [Redux Saga](https://redux-saga.js.org/).
 
 ## Content
 
 The boilerplate contains:
 
 - [React Native](https://facebook.github.io/react-native/) (v**0.62.3**)
-- [Clear directory layout](#directory-layout) to provide a base design for your application
+- [Clear directory layout](#directory-layout) to provide a base architecture for your application
 - [Redux](https://redux.js.org/) (v4.0.5) to help manage state
 - [Redux Persist](https://github.com/rt2zz/redux-persist) (v6.0.0) to persist the Redux state
 - [Redux Sagas](https://redux-saga.js.org) (v1.1.3) to separate side-effects and logic from state and UI logic
@@ -137,7 +137,7 @@ This project is released under the [MIT License](LICENSE).
 
 I looked into existing boilerplates before starting this project, and while many of them are awesome, But every boilerplate was lacking something, so I come up with a boilerplate that has all the features that modern app needed. For example
 
-- Great Design
+- Great Architecture
 - React Navigation 5
 - Redux
 - Redux Saga
