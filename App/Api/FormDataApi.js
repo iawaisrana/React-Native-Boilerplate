@@ -26,7 +26,7 @@ export default async function formDataApi(path, params, method, type) {
   };
 
   return fetch(path, options)
-    .then(resp => resp.json())
-    .then(json => json)
-    .catch(error => console.log(error));
+    .then((resp) => resp.json())
+    .then((json) => json)
+    .catch((error) => console.log(error));
 }

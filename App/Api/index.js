@@ -1,4 +1,5 @@
 import AsyncStorage from '@react-native-community/async-storage';
+import axios from 'axios';
 
 const getAuthToken = async () => {
   try {
@@ -14,6 +15,7 @@ const getAuthToken = async () => {
 
 export default async function api(path, params, method, token) {
   token = await getAuthToken();
+
   const options = {
     headers: {
       'Content-Type': 'application/json',
@@ -22,14 +24,16 @@ export default async function api(path, params, method, token) {
     method: method,
     ...(params && {body: JSON.stringify(params)}),
   };
+
   console.log('options', path, options);
+
   return fetch(path, options)
-    .then(resp => {
+    .then((resp) => {
       resp.json();
       console.log('res', resp.json());
     })
-    .then(json => json)
-    .catch(error => {
+    .then((json) => json)
+    .catch((error) => {
       error;
       console.log('error', error);
     });

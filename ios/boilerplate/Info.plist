@@ -28,13 +28,18 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
-			<array/>
+			<array>
+				<string>REVERSED_CLIENT_ID</string>
+			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
-			<array/>
+			<array>
+				<string>insert</string>
+				<string>"fb_login_protocol_scheme"</string>
+			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>

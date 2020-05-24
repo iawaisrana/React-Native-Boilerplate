@@ -51,9 +51,10 @@ The boilerplate contains:
 - [Code-Push](https://github.com/Microsoft/react-native-code-push) (v6.2.0) This plugin provides client-side integration for the CodePush service, allowing you to easily add a dynamic update experience to your React Native app(s).
 - [react-native-fbsdk](https://github.com/facebook/react-native-fbsdk) (v2.0.0) to facilitate the facebook login
 - [google-signin](https://github.com/react-native-community/google-signin) (v4.0.0) to facilitate the google signin
-- [Dark Theme Support](https://callstack.github.io/react-native-paper/theming.html) with a [`DarkTheme`](App/Utils/DarkTheme.js)
+- [Theme Support](https://callstack.github.io/react-native-paper/theming.html) with a [`DarkTheme`](App/Utils/DarkTheme.js) and [`LightTheme`](App/Utils/LightTheme.js)
 - [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen) (v3.2.0) setup by default
 - [axios](https://github.com/axios/axios) to make API calls (v0.19.2)
+- [TypeScript](https://www.typescriptlang.org/) configured for React Native
 - [prettier](https://prettier.io/) and [eslint](https://eslint.org/) pre configured for React Native
 
 **Note:** Custom Drawer and Custom Bottom Tabs are also part of the app.
@@ -69,7 +70,7 @@ The boilerplate contains:
 - [`App/Reducers`](App/Reducers): Redux reducers
 - [`App/Api`](App/Api): Application services, e.g. API clients
 - [`App/Stores`](App/Stores): Redux [actions, reducers and stores](https://redux.js.org/basics)
-- [`App/Utils`](App/Utils): Language and Styles helpers for the application
+- [`App/Utils`](App/Utils): Styles helpers for the application
 
 ## Requirements
 
@@ -149,3 +150,4 @@ I looked into existing boilerplates before starting this project, and while many
 - Dark Theme Support
 - Multilingual Support
 - Splash Screen Support
+- TypeScript Support
