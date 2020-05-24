@@ -34,3 +34,22 @@ The main purpose of the design of the boilerplate is the separation of concerns
 - **State is managed using global [Redux](https://redux.js.org/) stores**.
   
 - **Application side-effects (API calls, etc.) are separated from UI and state manipulation using [Redux Saga](https://redux-saga.js.org/)**.
+  
+## Content
+
+The boilerplate contains:
+
+- a [React Native](https://facebook.github.io/react-native/) (v**0.62.3**)
+- a [clear directory layout](#directory-layout) to provide a base design for your application
+- [Redux](https://redux.js.org/) (v4.0.5) to help manage state
+- [Redux Persist](https://github.com/rt2zz/redux-persist) (v6.0.0) to persist the Redux state
+- [Redux Sagas](https://redux-saga.js.org) (v1.1.3) to separate side-effects and logic from state and UI logic
+- [React Navigation 5](https://reactnavigation.org/) with a [`NavigationService`](App/Navigation/NavigationService.js) to handle routing and navigation in the app, with a splash screen set up by default
+- [i18Next](https://www.i18next.com/) (v11.3.5) to facilitate the MultiLingual App
+- [Firebase](https://rnfirebase.io/) (v5.6.0)
+- [Push Notifications](https://rnfirebase.io/messaging/usage) integrated in the app
+- [Code-Push](https://github.com/Microsoft/react-native-code-push) (v6.2.0) This plugin provides client-side integration for the CodePush service, allowing you to easily add a dynamic update experience to your React Native app(s).
+- [react-native-fbsdk](https://github.com/facebook/react-native-fbsdk) (v2.0.0) to facilitate the facebook login
+- [google-signin](https://github.com/react-native-community/google-signin) (v4.0.0) to facilitate the google signin
+- [axios](https://github.com/axios/axios) to make API calls (v0.19.0)
+- [prettier](https://prettier.io/) and [eslint](https://eslint.org/) preconfigured for React Native
