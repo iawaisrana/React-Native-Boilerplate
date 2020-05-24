@@ -88,8 +88,8 @@ To create a new project using the boilerplate:
 - Clone this repository
 - Remove the previous git history: `rm -rf .git/`
 - Install the npm dependencies by running `yarn` or `npm install`
-- `Without custom Bundle Identifier` rename the React Native project to your own project name: `yarn run rename -- <YourProjectName>` or `npm run rename -- <YourProjectName>` (the default name is `boilerplate`)
-- `With custom Bundle Identifier (Android only. For iOS, please use Xcode)` rename the React Native project to your own project name: `yarn run rename -- <YourProjectName> -b <bundleIdentifier>` or `npm run rename -- <YourProjectName> -b <bundleIdentifier>` (the default name is `boilerplate`)
+- **`Without custom Bundle Identifier`** rename the React Native project to your own project name: `yarn run rename -- <YourProjectName>` or `npm run rename -- <YourProjectName>` (the default name is `boilerplate`)
+- **`With custom Bundle Identifier (Android only. For iOS, please use Xcode)`** rename the React Native project to your own project name: `yarn run rename -- <YourProjectName> -b <bundleIdentifier>` or `npm run rename -- <YourProjectName> -b <bundleIdentifier>` (the default name is `boilerplate`)
 - **[Android Google Setup]((https://github.com/react-native-community/google-signin/blob/master/docs/android-guide.md)):-** For push notifications and google signin to work in the android app place your `google-services.json` into `Android/app` folder
 - **[Android Facebook Setup](https://github.com/facebook/react-native-fbsdk):-** For facebook login to work in the android app please provide `facebook_app_id` and `fb_login_protocol_scheme` value in the `App/app/src/main/res/values/strings.xml`
 - **[iOS Google Setup](https://github.com/react-native-community/google-signin/blob/master/docs/ios-guide.md):-** For push notifications and google signin to work in the iOS app drag your `GoogleService-Info.plist` to project folder in the xcode and place `REVERSED_CLIENT_ID` present in the `GoogleService-Info.plist` to the **Url Types** present in the **Info** tab
