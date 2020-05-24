@@ -29,7 +29,8 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>REVERSED_CLIENT_ID</string>
+				<string>insert</string>
+				<string>"REVERSED_CLIENT_ID"</string>
 			</array>
 		</dict>
 		<dict>
