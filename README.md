@@ -11,13 +11,16 @@
 [![Push Notifications](https://img.shields.io/badge/Push%20Notifications-Yes-green.svg)](https://shields.io/)
 [![Redux](https://img.shields.io/badge/Redux-Yes-green.svg)](https://shields.io/)
 [![Offline Storage](https://img.shields.io/badge/Data%20Persist-Yes-green.svg)](https://shields.io/)
+[![Splash Screen](https://img.shields.io/badge/Splash%20Screen-Yes-green.svg)](https://shields.io/)
+io/)
+[![Multilingual Support](https://img.shields.io/badge/Multilingual%20Support-Yes-green.svg)](https://shields.io/)
 [![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://shields.io/)
 
 ## React-Native-Boilerplate
 
 This project is a [React Native](https://facebook.github.io/react-native/) boilerplate that can be used to kickstart a mobile application.
 
-The boilerplate provides **an architecture optimized for building solid cross-platform mobile applications** through separation of concerns between the UI and business logic. It is extremely documented so that each piece of code that lands in your application can be understood and used.
+The boilerplate provides **a design optimized for developing reliable cross-platform mobile applications** through the separation of concerns between the UI and business logic. It is remarkably documented so that each section of code that lands in your application can be understood and used.
 
 ```
 If you find this boilerplate useful then please give the repository a star
