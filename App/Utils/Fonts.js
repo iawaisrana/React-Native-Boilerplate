@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native';
 
 const size = {
-  h1: 38,
-  h2: 34,
-  h3: 30,
+  h1: 34,
+  h2: 30,
+  h3: 26,
   input: 18,
   regular: 17,
   medium: 14,
