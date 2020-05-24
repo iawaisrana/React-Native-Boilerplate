@@ -1,6 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import {I18nManager, SafeAreaView, ScrollView, Text, TouchableOpacity} from 'react-native';
+import {
+  I18nManager,
+  SafeAreaView,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+} from 'react-native';
 import {withTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
 import FastImage from 'react-native-fast-image';
@@ -12,7 +18,7 @@ function DrawerComponent(props) {
   const {colors, fonts} = props.theme;
   const [t, i18n] = useTranslation();
 
-  const i18 = key => {
+  const i18 = (key) => {
     return t(key);
   };
 
@@ -49,7 +55,7 @@ function DrawerComponent(props) {
         source={require('../Assets/Images/icon.png')}
         style={{
           width: '100%',
-          height: 150,
+          height: 200,
         }}
       />
       <ScrollView contentContainerStyle={{paddingTop: 30}}>

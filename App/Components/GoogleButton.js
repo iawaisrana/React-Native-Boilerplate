@@ -7,18 +7,18 @@ import {useDispatch, useSelector} from 'react-redux';
 
 import {GoogleSignin, statusCodes} from '@react-native-community/google-signin';
 
-GoogleSignin.configure({
-  webClientId:
-    '345493290412-thkh2i7abd0kv8ngn55vblag6gj7qa40.apps.googleusercontent.com',
-});
+// uncomment and provide webClientId
+// GoogleSignin.configure({
+//   webClientId: /* insert webClientId here present in google-services.json*/,
+// });
 
 function GoogleButton(props) {
   const dispatch = useDispatch();
-  const isLoading = useSelector(state => state.loading.isLoading);
+  const isLoading = useSelector((state) => state.loading.isLoading);
   const {colors, fonts, screen} = props.theme;
   const [t, i18n] = useTranslation();
 
-  const i18 = key => {
+  const i18 = (key) => {
     return t(key);
   };
 

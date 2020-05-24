@@ -30,11 +30,11 @@ If you find this boilerplate useful then please give the repository a star
 The main purpose of the design of the boilerplate is the separation of concerns
 
 - **Presentational components are separated from Screens**.
-  
+
 - **State is managed using global [Redux](https://redux.js.org/) stores**.
-  
+
 - **Application side-effects (API calls, etc.) are separated from UI and state manipulation using [Redux Saga](https://redux-saga.js.org/)**.
-  
+
 ## Content
 
 The boilerplate contains:
@@ -83,6 +83,7 @@ You also need to install the dependencies required by React Native:
 ## Using the boilerplate
 
 To create a new project using the boilerplate:
+
 - Clone this repository
 - Remove the previous git history: `rm -rf .git/`
 - Install the npm dependencies by running `yarn` or `npm install`
@@ -96,3 +97,41 @@ To create a new project using the boilerplate:
 - **[Optional] Code-Push iOS Setup:-** For code-push to work in the iOS app please first [create app on app center for os="iOS" and platform="React Native" ](https://appcenter.ms/) . After creating the app you will get the app secret key, insert your app_secret into `AppCenter-Config.plist`. Go to the `Distribute` side menu on the app center, click code push, and generate production and staging deployment keys. Insert production deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Release` present in the root directory and insert staging deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Debug`
 
 You can now create a new git repository for your project (using `git init`) and create the first commit.
+
+## Running the project
+
+Assuming you have all the requirements installed, you can setup and run the project by running:
+
+- `yarn install` to install the dependencies
+- create your [configuration file `App/Config/index.js`](App/Config) from `index.dev.js` (if you are in dev environment) and fill the missing values
+- run the following steps for your platform
+
+### Android
+
+- only the first time you run the project, you need to generate a debug key with:
+  - `cd android/app`
+  - `keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000`
+  - `cd ../..` to come back to the root folder
+- `yarn start` or `npm install` to start the metro bundler, in a dedicated terminal
+- `yarn run android:debug-release` or `npm run android:debug-release` to run the Android application (remember to start a simulator or connect an Android phone)
+
+### iOS
+
+- `cd ios`
+- `pod install` to install pod dependencies
+- `cd ..` to come back to the root folder
+- `react-native run-ios` to run the iOS application (remember to start a simulator or connect an iPhone phone)
+
+## Useful documentation
+
+### Deployment
+
+- Using [Code-Push](https://microsoft.github.io/code-push/) to automate builds and send live updates to the app (iOS and Android)
+
+## License
+
+This project is released under the [MIT License](LICENSE).
+
+## Alternative boilerplates
+
+I looked into existing boilerplates before starting this project, and while many of them are awesome, But every boilerplate was lacking something, so, I come up with a boilerplate that has all the features that modern app needed.
