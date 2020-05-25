@@ -53,7 +53,6 @@ The boilerplate contains:
 - [google-signin](https://github.com/react-native-community/google-signin) (v4.0.0) to facilitate the google signin
 - [Theme Support](https://callstack.github.io/react-native-paper/theming.html) with a [`DarkTheme`](App/Utils/DarkTheme.js) and [`LightTheme`](App/Utils/LightTheme.js)
 - [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen) (v3.2.0) setup by default
-- [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) (v6.6.0) setup by default
 - [axios](https://github.com/axios/axios) to make API calls (v0.19.2)
 - [TypeScript](https://www.typescriptlang.org/) configured for React Native
 - [prettier](https://prettier.io/) and [eslint](https://eslint.org/) pre configured for React Native
@@ -93,18 +92,19 @@ To create a new project using the boilerplate:
     `yarn run rename -- <YourProjectName>` or `npm run rename -- <YourProjectName>` (the default name is `boilerplate`)
 - ##### Rename the React Native project (With custom Bundle Identifier, Android only. For iOS, please use Xcode)
     `yarn run rename -- <YourProjectName> -b <bundleIdentifier>` or `npm run rename -- <YourProjectName> -b <bundleIdentifier>` (the default name is `boilerplate`)
-- ##### [Google SDK Android Setup](https://github.com/react-native-community/google-signin/blob/master/docs/android-guide.md)
+- ##### [Google Sign-In SDK Android Setup](https://github.com/react-native-community/google-signin/blob/master/docs/android-guide.md)
     For push notifications and google signin to work in the android app place your `google-services.json` into `Android/app` folder
 - ##### [Facebook SDK Android Setup](https://github.com/facebook/react-native-fbsdk)
     For facebook login to work in the android app please provide `facebook_app_id` and `fb_login_protocol_scheme` value in the `App/app/src/main/res/values/strings.xml`
-- ##### [Google SDK iOS Setup](https://github.com/react-native-community/google-signin/blob/master/docs/ios-guide.md)
+- ##### [Google Sign-In SDK iOS Setup](https://github.com/react-native-community/google-signin/blob/master/docs/ios-guide.md)
     For push notifications and google signin to work in the iOS app drag your `GoogleService-Info.plist` to project folder in the xcode and place `REVERSED_CLIENT_ID` present in the `GoogleService-Info.plist` to the **Url Types** present in the **Info** tab
 - ##### [Facebook SDK iOS Setup](https://github.com/facebook/react-native-fbsdk)
     For Facebook login to work in the iOS app please provide `FacebookAppID` value in the `Info.plist` and place `fb_login_protocol_scheme` to the **Url Types** present in the **Info** tab
-- ##### [Optional] [Code-Push SDK Android Setup](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-android.md)
+- ##### [Optional] [CodePush Android Setup](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-android.md)
     For code-push to work in the android app please first [create app on app center for os="Android" and platform="React Native" ](https://appcenter.ms/) . After creating the app you will get app secret key, insert your app_secret into `android/app/src/main/assets/appcenter-config.json`. Go to the `Distribute` side menu on the app center, click code push, and generate production and staging deployment keys. Insert production deployment key into file `.env.production` present in the root directory and insert staging deployment key `.env.staging and .env`
-- ##### [Optional] [Code-Push SDK iOS Setup](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-ios.md)
-    For code-push to work in the iOS app please first [create app on app center for os="iOS" and platform="React Native" ](https://appcenter.ms/) . After creating the app you will get the app secret key, insert your app_secret into `AppCenter-Config.plist`. Go to the `Distribute` side menu on the app center, click code push, and generate production and staging deployment keys. Insert production deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Release` present in the root directory and insert staging deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Debug`
+- ##### [Optional] [CodePush iOS Setup](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-ios.md)
+
+    For CodePush to work in the iOS app please first [create app on app center for os="iOS" and platform="React Native" ](https://appcenter.ms/) . After creating the app you will get the app secret key, insert your app_secret into `AppCenter-Config.plist`. Go to the `Distribute` side menu on the app center, click code push, and generate production and staging deployment keys. Insert production deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Release` present in the root directory and insert staging deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Debug`
 
 You can now create a new git repository for your project (using `git init`) and create the first commit.
 
@@ -133,14 +133,27 @@ Assuming you have all the requirements installed, you can setup and run the proj
 
 ## Useful documentation
 
-### Deployment
+### [CodePush](https://microsoft.github.io/code-push/)
 
-- Using [Code-Push](https://microsoft.github.io/code-push/) to automate builds and send live updates to the app (iOS and Android)
+CodePush is an App Center cloud service that enables Apache Cordova and React Native developers to deploy mobile app updates directly to their users’ devices.
+
+### [Google Sign-In SDK](https://github.com/react-native-community/google-signin)
+
+Google Sign-In is a secure authentication system that reduces the burden of login for your users, by enabling them to sign in with their Google Account—the same account they already use with Gmail, Play, and other Google services.
+
+### [Facebook SDK](https://github.com/facebook/react-native-fbsdk)
+
+The Facebook SDK for is the easiest way to integrate your app with Facebook. It enables:
+
+- `Facebook Analytics` - Understand how people are using your product.
+- `Facebook Login` - Authenticate people with their Facebook credentials.
+- `Share and Send dialogs` - Enable sharing content from your app to Facebook.
+- `App Events` - Log events in your application.
+- `Graph API` - Read and write to Graph API. 
 
 ## License
 
 This project is released under the [MIT License](LICENSE).
-
 ## Why this boilerplate?
 
 I looked into existing boilerplates before starting this project, and while many of them are awesome, But every boilerplate was lacking something, so I come up with a boilerplate that has all the features that modern app needed. For example
