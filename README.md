@@ -166,7 +166,7 @@ I looked into existing boilerplates before starting this project, and while many
 - `Redux Persist Configured`
 - `Firebase SDK Integrated`
 - `Facebook SDK Integrated`
-- `Google SDK Integrated`
+- `Google Sign-in SDK Integrated`
 - `Code-Push SDK Integrated`
 - `Push Notifications Configured`
 - `Dark Theme Configured`
