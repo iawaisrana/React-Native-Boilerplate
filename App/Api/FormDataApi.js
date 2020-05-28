@@ -1,4 +1,5 @@
 import AsyncStorage from '@react-native-community/async-storage';
+import axios from 'axios';
 
 const getAuthToken = async () => {
   try {
@@ -13,20 +14,28 @@ const getAuthToken = async () => {
 };
 
 export default async function formDataApi(path, params, method, type) {
-  let token = await getAuthToken();
+  try {
+    let token = await getAuthToken();
 
-  const options = {
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'multipart/form-data',
-      Authorization: token,
-    },
-    method: method,
-    body: params,
-  };
+    const options = {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'multipart/form-data',
+        Authorization: token,
+      },
+      method: method,
+      body: params,
+    };
 
-  return fetch(path, options)
-    .then((resp) => resp.json())
-    .then((json) => json)
-    .catch((error) => console.log(error));
+    return axios(options)
+      .then((resp) => {
+        return resp.data;
+      })
+      .then((data) => data)
+      .catch((error) => {
+        console.log('error', error);
+      });
+  } catch (error) {
+    return error;
+  }
 }

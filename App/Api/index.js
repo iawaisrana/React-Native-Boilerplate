@@ -14,27 +14,30 @@ const getAuthToken = async () => {
 };
 
 export default async function api(path, params, method, token) {
-  token = await getAuthToken();
+  try {
+    token = await getAuthToken();
 
-  const options = {
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: token,
-    },
-    method: method,
-    ...(params && {body: JSON.stringify(params)}),
-  };
+    const options = {
+      url: path,
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: token,
+      },
+      method: method,
+      body: JSON.stringify(params),
+    };
 
-  console.log('options', path, options);
+    console.log('options', path, options);
 
-  return fetch(path, options)
-    .then((resp) => {
-      resp.json();
-      console.log('res', resp.json());
-    })
-    .then((json) => json)
-    .catch((error) => {
-      error;
-      console.log('error', error);
-    });
+    return axios(options)
+      .then((resp) => {
+        return resp.data;
+      })
+      .then((data) => data)
+      .catch((error) => {
+        console.log('error', error);
+      });
+  } catch (error) {
+    return error;
+  }
 }
