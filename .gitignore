@@ -28,7 +28,8 @@ build/
 .gradle
 local.properties
 *.iml
-*.keystore
+android/app/my-upload-key.keystore
+android/app/google-services.json
 
 # node.js
 #
@@ -57,3 +58,5 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+/ios/GoogleService-Info.plist
