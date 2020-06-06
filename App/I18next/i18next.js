@@ -2,15 +2,15 @@ import React from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 import i18next from 'i18next';
 import {initReactI18next} from 'react-i18next';
-import en from '../Assets/Localize/en.json';
-import fr from '../Assets/Localize/fr.json';
+import en from './Localize/en.json';
+import fr from './Localize/fr.json';
 
 const LOCALE_PERSISTENCE_KEY = 'language';
 
 const languageDetector = {
   type: 'languageDetector',
   async: true,
-  detect: async language => {
+  detect: async (language) => {
     const persistedLocale = await AsyncStorage.getItem(LOCALE_PERSISTENCE_KEY);
     if (!persistedLocale) {
       // Find best available language from the resource ones
@@ -21,7 +21,7 @@ const languageDetector = {
     return language(persistedLocale);
   },
   init: () => {},
-  cacheUserLanguage: locale => {
+  cacheUserLanguage: (locale) => {
     AsyncStorage.setItem(LOCALE_PERSISTENCE_KEY, locale);
   },
 };

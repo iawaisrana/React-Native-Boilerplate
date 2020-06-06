@@ -7,13 +7,13 @@ import {useNavigation} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
 import {FacebookButton, GoogleButton, MenuHeader} from '../../Components';
 
-const HomeView = props => {
+const HomeView = (props) => {
   const {colors} = props.theme;
   const [t, i18n] = useTranslation();
   const dispatch = useDispatch();
   const navigation = useNavigation();
 
-  const i18 = key => {
+  const i18 = (key) => {
     return t(key);
   };
 

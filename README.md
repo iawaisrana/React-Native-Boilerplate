@@ -45,7 +45,7 @@ The boilerplate contains:
 - [Redux Persist](https://github.com/rt2zz/redux-persist) (v6.0.0) to persist the Redux state
 - [Redux Sagas](https://redux-saga.js.org) (v1.1.3) to separate side-effects and logic from state and UI logic
 - [React Navigation 5](https://reactnavigation.org/) with a [`NavigationService`](App/Navigation/NavigationService.js) to handle routing and navigation in the boilerplate
-- [i18Next](https://www.i18next.com/) (v11.3.5) to facilitate the more than one language App
+- [i18Next](https://www.i18next.com/) (v11.3.5) to facilitate the more than one language in the App
 - [Firebase](https://rnfirebase.io/) (v5.6.0)
 - [Push Notifications](https://rnfirebase.io/messaging/usage) integrated in the boilerplate
 - [Code-Push](https://github.com/Microsoft/react-native-code-push) (v6.2.0) This plugin provides client-side integration for the CodePush service, allowing you to easily add a dynamic update experience to your React Native app(s).
@@ -63,7 +63,8 @@ The boilerplate contains:
 
 - [`App/Components`](App/Components): Presentational components
 - [`App/Screens`](App/Screens): The application's screens
-- [`App/Assets`](App/Assets): Assets (image, audio files, language ...) used by the application
+- [`App/Assets`](App/Assets): Assets (image, audio files) used by the application
+- [`App/I18next`](App/I18next): Language setup and localize used by the application
 - [`App/Navigation`](App/Navigation): React-Navigation setting
 - [`App/Sagas`](App/Sagas): Redux sagas
 - [`App/Actions`](App/Action): Redux actions
