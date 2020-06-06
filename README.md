@@ -152,6 +152,12 @@ The Facebook SDK for is the easiest way to integrate your app with Facebook. It 
 - `App Events` - Log events in your application.
 - `Graph API` - Read and write to Graph API. 
 
+### [I18next](https://www.i18next.com/)
+
+I18next is an internationalization-framework written in and for JavaScript. But it's much more than that.
+
+i18next goes beyond just providing the standard i18n features such as (plurals, context, interpolation, format). It provides you with a complete solution to localize your product from web to mobile and desktop. 
+
 ## License
 
 This project is released under the [MIT License](LICENSE).

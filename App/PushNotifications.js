@@ -41,7 +41,7 @@ const PushNotification = (props) => {
   const checkPermission = async () => {
     const enabled = await firebase.messaging().hasPermission();
     let fcm_token = await AsyncStorage.getItem('@fcm_token');
-    console.log('Fcm Token = ', fcm_token);
+
     if (enabled && !fcm_token) {
       getToken();
     } else {
