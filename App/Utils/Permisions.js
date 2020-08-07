@@ -10,7 +10,7 @@ const cameraPermission =
 
 const checkCameraPermission = () => {
   check(cameraPermission)
-    .then(result => {
+    .then((result) => {
       switch (result) {
         case RESULTS.UNAVAILABLE:
           console.log(
@@ -30,7 +30,7 @@ const checkCameraPermission = () => {
           break;
       }
     })
-    .catch(error => {
+    .catch((error) => {
       // …
     });
 };

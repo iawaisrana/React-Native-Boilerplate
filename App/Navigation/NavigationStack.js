@@ -28,7 +28,7 @@ const AppStack = () => {
 const BottomTabStack = () => {
   return (
     <BottomTabNavigator.Navigator
-      tabBar={props => <CustomBottomTab {...props} />}
+      tabBar={(props) => <CustomBottomTab {...props} />}
       initialRouteName="AppStack"
       headerMode={'none'}
       activeColor={'#f0edf6'}
@@ -44,7 +44,7 @@ const DrawerStack = () => {
     <DrawerNavigator.Navigator
       headerMode="none"
       initialRouteName="BottomTabStack"
-      drawerContent={props => <CustomDrawer {...props} />}>
+      drawerContent={(props) => <CustomDrawer {...props} />}>
       <DrawerNavigator.Screen
         name="BottomTabStack"
         component={BottomTabStack}
@@ -62,7 +62,7 @@ const AuthStack = () => {
 };
 
 const NavigationStack = () => {
-  const isLoggedIn = useSelector(state => state.auth.isLoggedIn);
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
   return (
     <ApplicationStack.Navigator headerMode="none">

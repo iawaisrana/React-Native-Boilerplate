@@ -6,17 +6,13 @@ import {DarkTheme, LightTheme} from './Utils';
 import AppNavigator from './Navigation';
 import PushNotifications from './PushNotifications';
 import {Provider as PaperProvider} from 'react-native-paper';
-import {Provider} from 'react-redux';
+import Provider from './Redux/Provider';
 import {Root} from 'native-base';
-import {persistor, store} from './Store/Store';
-import {PersistGate} from 'redux-persist/integration/react';
 import SplashScreen from 'react-native-splash-screen';
 import codePush from 'react-native-code-push';
 
 const App = () => {
   const colorScheme = Appearance.getColorScheme();
-
-  console.log(colorScheme);
 
   useEffect(() => {
     console.disableYellowBox = true;
@@ -30,11 +26,9 @@ const App = () => {
       <Root>
         <SafeAreaView style={{flex: 1}}>
           <PaperProvider theme={colorScheme == 'dark' ? DarkTheme : LightTheme}>
-            <Provider store={store}>
-              <PersistGate loading={null} persistor={persistor}>
-                <AppNavigator />
-                <PushNotifications />
-              </PersistGate>
+            <Provider>
+              <AppNavigator />
+              <PushNotifications />
             </Provider>
           </PaperProvider>
         </SafeAreaView>
