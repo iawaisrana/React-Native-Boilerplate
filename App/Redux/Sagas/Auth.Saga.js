@@ -13,11 +13,11 @@ function* loginSaga({payload}) {
         ...response.user,
         token: response.success.token,
       };
-      yield put(authActionsCreator.userLoginSuccess({user}));
+      yield put(authActionsCreator.loginSuccess({user}));
     }
   } catch (err) {
     yield put(
-      authActionsCreator.userLoginFailed({
+      authActionsCreator.loginError({
         error: err ? err : 'User Login Failed!',
       }),
     );
@@ -33,11 +33,11 @@ function* signupSaga({payload}) {
         ...response.success.user,
         token: response.success.token,
       };
-      yield put(authActionsCreator.userSignupSuccess({user}));
+      yield put(authActionsCreator.registerSuccess({user}));
     }
   } catch (error) {
     yield put(
-      authActionsCreator.userSignupRequest({
+      authActionsCreator.registerError({
         error: error ? error : 'User Signup Failed',
       }),
     );

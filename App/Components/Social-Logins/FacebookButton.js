@@ -2,7 +2,7 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {AccessToken, GraphRequest, GraphRequestManager, LoginManager} from 'react-native-fbsdk';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch, useSelector} from '../../Redux/Connects/node_modules/react-redux';
 import {withTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
 

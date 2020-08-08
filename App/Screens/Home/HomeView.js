@@ -2,7 +2,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import {withTheme} from 'react-native-paper';
-import {useDispatch} from 'react-redux';
+import {useDispatch} from '../../Redux/Connects/node_modules/react-redux';
 import {useNavigation} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
 import {FacebookButton, GoogleButton, MenuHeader} from '../../Components';

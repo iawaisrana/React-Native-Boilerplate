@@ -2,7 +2,7 @@
 import React from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import {useDispatch} from 'react-redux';
+import {useDispatch} from '../../Redux/Connects/node_modules/react-redux';
 import {Text, TouchableOpacity, View} from 'react-native';
 import {withTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';

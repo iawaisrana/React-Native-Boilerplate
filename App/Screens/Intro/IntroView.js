@@ -4,7 +4,7 @@ import {Text, TouchableOpacity, View} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {withTheme} from 'react-native-paper';
-import {useDispatch} from 'react-redux';
+import {useDispatch} from '../../Redux/Connects/node_modules/react-redux';
 import {useNavigation} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
 import styles from './styles';

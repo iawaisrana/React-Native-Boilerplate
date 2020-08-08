@@ -3,7 +3,7 @@ import firebase from 'react-native-firebase';
 import NotificationPopup from 'react-native-push-notification-popup';
 import AsyncStorage from '@react-native-community/async-storage';
 import {withTheme} from 'react-native-paper';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch, useSelector} from './Redux/Connects/node_modules/react-redux';
 
 var notificationListener = null;
 var notificationOpenedListener = null;

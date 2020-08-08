@@ -3,7 +3,7 @@ import NavigationStack from './NavigationStack';
 import NavigationService from './NavigationService';
 import {NavigationContainer} from '@react-navigation/native';
 import {Toast} from 'native-base';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch, useSelector} from '../Redux/Connects/node_modules/react-redux';
 import {disableSnackbar} from '../Actions/Snackbar';
 
 const AppNavigator = () => {

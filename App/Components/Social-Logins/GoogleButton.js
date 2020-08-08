@@ -3,7 +3,7 @@ import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {withTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch, useSelector} from '../../Redux/Connects/node_modules/react-redux';
 
 import {GoogleSignin, statusCodes} from '@react-native-community/google-signin';
 
