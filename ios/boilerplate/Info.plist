@@ -48,7 +48,7 @@
 	<key>CodePushDeploymentKey</key>
 	<string>$(CodePushDeploymentKey)</string>
 	<key>FacebookAppID</key>
-	<string></string>
+	<string/>
 	<key>FacebookDisplayName</key>
 	<string>Start Up</string>
 	<key>LSApplicationQueriesSchemes</key>
@@ -78,7 +78,7 @@
 		<string>armv7</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>
@@ -96,6 +96,28 @@
 		<string>SimpleLineIcons.ttf</string>
 		<string>Octicons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>SFProDisplay-Black.otf</string>
+		<string>SFProDisplay-BlackItalic.otf</string>
+		<string>SFProDisplay-Bold.otf</string>
+		<string>SFProDisplay-BoldItalic.otf</string>
+		<string>SFProDisplay-Heavy.otf</string>
+		<string>SFProDisplay-HeavyItalic.otf</string>
+		<string>SFProDisplay-Light.otf</string>
+		<string>SFProDisplay-LightItalic.otf</string>
+		<string>SFProDisplay-Medium.otf</string>
+		<string>SFProDisplay-MediumItalic.otf</string>
+		<string>SFProDisplay-Regular.otf</string>
+		<string>SFProDisplay-RegularItalic.otf</string>
+		<string>SFProDisplay-Semibold.otf</string>
+		<string>SFProDisplay-SemiboldItalic.otf</string>
+		<string>SFProDisplay-Thin.otf</string>
+		<string>SFProDisplay-ThinItalic.otf</string>
+		<string>SFProDisplay-Ultralight.otf</string>
+		<string>SFProDisplay-UltralightItalic.otf</string>
+		<string>Fontisto.ttf</string>
+		<string>Roboto_medium.ttf</string>
+		<string>Roboto.ttf</string>
+		<string>rubicon-icon-font.ttf</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

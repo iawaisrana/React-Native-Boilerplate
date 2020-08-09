@@ -12,7 +12,7 @@ import {
   FACEBOOK_LOGIN_REQUEST,
   FACEBOOK_LOGIN_SUCCESS,
   FACEBOOK_LOGIN_ERROR,
-} from '../Types';
+} from '../types';
 
 export const authActionsCreator = {
   loginRequest: createAction(LOGIN_REQUEST),

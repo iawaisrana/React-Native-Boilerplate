@@ -2,8 +2,8 @@ import React from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 import i18next from 'i18next';
 import {initReactI18next} from 'react-i18next';
-import en from './Localize/en.json';
-import fr from './Localize/fr.json';
+import en from './localize/en.json';
+import fr from './localize/fr.json';
 
 const LOCALE_PERSISTENCE_KEY = 'language';
 

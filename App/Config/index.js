@@ -1,1 +1,2 @@
-export * from './Routes';
+export * from './routes';
+export * from './screens';

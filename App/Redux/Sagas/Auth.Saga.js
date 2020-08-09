@@ -1,6 +1,6 @@
 import {take, put, call, fork, all} from 'redux-saga/effects';
 import AsyncStorage from '@react-native-community/async-storage';
-import {LOGIN_REQUEST, REGISTER_REQUEST} from '../Types';
+import {LOGIN_REQUEST, REGISTER_REQUEST} from '../types';
 import {authActionsCreator} from '../actions';
 import {login, signUp} from '../api';
 

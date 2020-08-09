@@ -4,14 +4,14 @@ import {Text, TouchableOpacity, View} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {withTheme} from 'react-native-paper';
-import {useDispatch} from '../../Redux/Connects/node_modules/react-redux';
+import {useDispatch} from 'react-redux';
 import {useNavigation} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
-import styles from './styles';
+import styles from './home.styles';
 
 const IntroView = (props) => {
   const {colors, fonts} = props.theme;
-  console.log(fonts);
+
   const [t, i18n] = useTranslation();
   const dispatch = useDispatch();
   const navigation = useNavigation();

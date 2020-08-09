@@ -1,3 +1,3 @@
-export * from './Styles';
-export * from './Colors';
-export * from './Images';
+export * from './common-styles';
+export * from './colors';
+export * from './images';

@@ -1,1 +1,1 @@
-export * from './MenuHeader';
+export * from './menu-header';

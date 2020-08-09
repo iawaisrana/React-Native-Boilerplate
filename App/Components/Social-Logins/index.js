@@ -1,2 +1,2 @@
-export * from './FacebookButton';
-export * from './GoogleButton';
+export * from './facebook';
+export * from './google';

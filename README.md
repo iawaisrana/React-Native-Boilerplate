@@ -61,17 +61,22 @@ The boilerplate contains:
 
 ## Directory layout
 
-- [`App/Components`](App/Components): Presentational components
-- [`App/Screens`](App/Screens): The application's screens
-- [`App/Assets`](App/Assets): Assets (image, audio files) used by the application
-- [`App/I18next`](App/I18next): Language setup and localize used by the application
-- [`App/Navigation`](App/Navigation): React-Navigation setting
-- [`App/Sagas`](App/Sagas): Redux sagas
-- [`App/Actions`](App/Action): Redux actions
-- [`App/Reducers`](App/Reducers): Redux reducers
-- [`App/Api`](App/Api): Application services, e.g. API clients
-- [`App/Stores`](App/Stores): Redux [actions, reducers and stores](https://redux.js.org/basics)
-- [`App/Utils`](App/Utils): Styles helpers for the application
+- [`app/components`](app/components): Presentational components
+- [`app/screens`](app/screens): The application's screens
+- [`app/assets`](app/assets): Assets (image, audio files) used by the application
+- [`app/i18next`](app/i18next): Language setup and localize used by the application
+- [`app/navigation`](app/navigation): React-Navigation setting
+- [`app/redux/store`](app/redux/store): Redux store
+- [`app/redux/sagas`](app/redux/saga): Redux sagas
+- [`app/redux/actions`](app/redux/action): Redux actions
+- [`app/redux/reducers`](app/redux/reducers): Redux reducers
+- [`app/redux/connects`](app/redux/connects): Redux data connectors
+- [`app/redux/types`](app/redux/types): Redux action types
+- [`app/redux/api`](app/redux/api): application services, e.g. API clients
+- [`app/Utils`](app/Utils): Styles helpers for the application
+- [`app/config`](app/config): Routes and Screen configurations
+- [`app/constants`](app/constants): Colors, images and common styles
+- [`app/helpers`](app/helpers): Colors, images and common styles
 
 ## Requirements
 
@@ -90,22 +95,22 @@ To create a new project using the boilerplate:
 - Remove the previous git history: `rm -rf .git/`
 - Install the npm dependencies by running `yarn` or `npm install`
 - ##### Rename the React Native project (Without custom Bundle Identifier)
-    `yarn run rename -- <YourProjectName>` or `npm run rename -- <YourProjectName>` (the default name is `boilerplate`)
+  `yarn run rename -- <YourProjectName>` or `npm run rename -- <YourProjectName>` (the default name is `boilerplate`)
 - ##### Rename the React Native project (With custom Bundle Identifier, Android only. For iOS, please use Xcode)
-    `yarn run rename -- <YourProjectName> -b <bundleIdentifier>` or `npm run rename -- <YourProjectName> -b <bundleIdentifier>` (the default name is `boilerplate`)
+  `yarn run rename -- <YourProjectName> -b <bundleIdentifier>` or `npm run rename -- <YourProjectName> -b <bundleIdentifier>` (the default name is `boilerplate`)
 - ##### [Google Sign-In SDK Android Setup](https://github.com/react-native-community/google-signin/blob/master/docs/android-guide.md)
-    For push notifications and google signin to work in the android app place your `google-services.json` into `Android/app` folder
+  For push notifications and google signin to work in the android app place your `google-services.json` into `Android/app` folder
 - ##### [Facebook SDK Android Setup](https://github.com/facebook/react-native-fbsdk)
-    For facebook login to work in the android app please provide `facebook_app_id` and `fb_login_protocol_scheme` value in the `App/app/src/main/res/values/strings.xml`
+  For facebook login to work in the android app please provide `facebook_app_id` and `fb_login_protocol_scheme` value in the `App/app/src/main/res/values/strings.xml`
 - ##### [Google Sign-In SDK iOS Setup](https://github.com/react-native-community/google-signin/blob/master/docs/ios-guide.md)
-    For push notifications and google signin to work in the iOS app drag your `GoogleService-Info.plist` to project folder in the xcode and place `REVERSED_CLIENT_ID` present in the `GoogleService-Info.plist` to the **Url Types** present in the **Info** tab
+  For push notifications and google signin to work in the iOS app drag your `GoogleService-Info.plist` to project folder in the xcode and place `REVERSED_CLIENT_ID` present in the `GoogleService-Info.plist` to the **Url Types** present in the **Info** tab
 - ##### [Facebook SDK iOS Setup](https://github.com/facebook/react-native-fbsdk)
-    For Facebook login to work in the iOS app please provide `FacebookAppID` value in the `Info.plist` and place `fb_login_protocol_scheme` to the **Url Types** present in the **Info** tab
-- ##### [Optional] [CodePush Android Setup](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-android.md)
-    For code-push to work in the android app please first [create app on app center for os="Android" and platform="React Native" ](https://appcenter.ms/) . After creating the app you will get app secret key, insert your app_secret into `android/app/src/main/assets/appcenter-config.json`. Go to the `Distribute` side menu on the app center, click code push, and generate production and staging deployment keys. Insert production deployment key into file `.env.production` present in the root directory and insert staging deployment key `.env.staging and .env`
-- ##### [Optional] [CodePush iOS Setup](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-ios.md)
+  For Facebook login to work in the iOS app please provide `FacebookAppID` value in the `Info.plist` and place `fb_login_protocol_scheme` to the **Url Types** present in the **Info** tab
+- ##### [Optional][codepush android setup](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-android.md)
+  For code-push to work in the android app please first [create app on app center for os="Android" and platform="React Native" ](https://appcenter.ms/) . After creating the app you will get app secret key, insert your app_secret into `android/app/src/main/assets/appcenter-config.json`. Go to the `Distribute` side menu on the app center, click code push, and generate production and staging deployment keys. Insert production deployment key into file `.env.production` present in the root directory and insert staging deployment key `.env.staging and .env`
+- ##### [Optional][codepush ios setup](https://github.com/microsoft/react-native-code-push/blob/master/docs/setup-ios.md)
 
-    For CodePush to work in the iOS app please first [create app on app center for os="iOS" and platform="React Native" ](https://appcenter.ms/) . After creating the app you will get the app secret key, insert your app_secret into `AppCenter-Config.plist`. Go to the `Distribute` side menu on the app center, click code push, and generate production and staging deployment keys. Insert production deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Release` present in the root directory and insert staging deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Debug`
+  For CodePush to work in the iOS app please first [create app on app center for os="iOS" and platform="React Native" ](https://appcenter.ms/) . After creating the app you will get the app secret key, insert your app_secret into `AppCenter-Config.plist`. Go to the `Distribute` side menu on the app center, click code push, and generate production and staging deployment keys. Insert production deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Release` present in the root directory and insert staging deployment key into `Build Settings/User-Defined/CodePushDeploymentKey/Debug`
 
 You can now create a new git repository for your project (using `git init`) and create the first commit.
 
@@ -150,17 +155,18 @@ The Facebook SDK for is the easiest way to integrate your app with Facebook. It 
 - `Facebook Login` - Authenticate people with their Facebook credentials.
 - `Share and Send dialogs` - Enable sharing content from your app to Facebook.
 - `App Events` - Log events in your application.
-- `Graph API` - Read and write to Graph API. 
+- `Graph API` - Read and write to Graph API.
 
 ### [I18next](https://www.i18next.com/)
 
 I18next is an internationalization-framework written in and for JavaScript. But it's much more than that.
 
-i18next goes beyond just providing the standard i18n features such as (plurals, context, interpolation, format). It provides you with a complete solution to localize your product from web to mobile and desktop. 
+i18next goes beyond just providing the standard i18n features such as (plurals, context, interpolation, format). It provides you with a complete solution to localize your product from web to mobile and desktop.
 
 ## License
 
 This project is released under the [MIT License](LICENSE).
+
 ## Why this boilerplate?
 
 I looked into existing boilerplates before starting this project, and while many of them are awesome, But every boilerplate was lacking something, so I come up with a boilerplate that has all the features that modern app needed. For example

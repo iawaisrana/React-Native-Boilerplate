@@ -1,4 +1,4 @@
-import {SERVER_URL, END_POINTS} from '../../Config';
+import {SERVER_URL, END_POINTS} from '../../config';
 import {API} from '../../helpers';
 
 export function login(params) {

@@ -1,5 +1,5 @@
-const logo = require('../Assets/Images/logo.png');
-const icon = require('../Assets/Images/icon.png');
+const logo = require('../assets/images/logo.png');
+const icon = require('../assets/images/icon.png');
 
 const images = {
   logo,
