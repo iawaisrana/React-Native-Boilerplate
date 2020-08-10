@@ -1,9 +1,8 @@
-import {Appearance, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {textStyle} from '../../constants';
-import {DarkTheme, LightTheme} from '../../theme';
+import {theme} from '../../theme';
 
-const colorScheme = Appearance.getColorScheme();
-const {colors} = colorScheme == 'dark' ? DarkTheme : LightTheme;
+const {colors} = theme;
 
 export default StyleSheet.create({
   container: {
