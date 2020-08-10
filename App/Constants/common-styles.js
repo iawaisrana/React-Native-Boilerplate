@@ -18,22 +18,18 @@ export const getPercentageWidth = (widthParam) => {
 export const textStyle = {
   small: {
     fontSize: 12,
-    fontFamily: 'SFProDisplay',
     fontWeight: '200',
   },
   medium: {
     fontSize: 14,
-    fontFamily: 'SFProDisplay',
     fontWeight: '300',
   },
   normal: {
     fontSize: 16,
-    fontFamily: 'SFProDisplay',
     fontWeight: '400',
   },
   heading: {
     fontSize: 18,
-    fontFamily: 'SFProDisplay',
     fontWeight: '800',
   },
 };
