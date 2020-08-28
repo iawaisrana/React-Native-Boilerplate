@@ -1,14 +1,14 @@
+import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {screens} from '../config';
-import Intro from '../screens/intro';
+import { screens } from '../config';
+import WalkThrough from '../screens/walkthrough';
 
 const AuthStack = createStackNavigator();
 
-export default function authStack() {
+export default function AuthNavigator() {
   return (
     <AuthStack.Navigator headerMode="none">
-      <AuthStack.Screen name={screens.intro} component={Intro} />
+      <AuthStack.Screen name={screens.walkthrough} component={WalkThrough} />
     </AuthStack.Navigator>
   );
 }

@@ -1,8 +1,7 @@
-import {Dimensions} from 'react-native';
+import { Dimensions } from 'react-native';
 import DarkThemeColors from './dark-theme-colors';
-import fonts from './fonts';
 
-const {width, height} = Dimensions.get('screen');
+const { width, height } = Dimensions.get('screen');
 
 export default {
   button: {
@@ -14,7 +13,6 @@ export default {
   colors: {
     ...DarkThemeColors,
   },
-  fonts: {...fonts},
   screen: {
     width,
     height,

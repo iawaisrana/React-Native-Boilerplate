@@ -1,19 +1,18 @@
+import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
-
+import { screens } from '../config';
 import AuthStack from './auth-stack';
-import AppStack from './drawer-stack';
+import DrawerStack from './drawer-stack';
 
-const ApplicationStack = createStackNavigator();
+const RootStack = createStackNavigator();
 
-const NavigationStack = () => {
+const AppNavigator = () => {
   return (
-    <NavigationContainer>
-      <ApplicationStack.Screen name="Auth" component={AuthStack} />
-      <ApplicationStack.Screen name="App" component={AppStack} />
-    </NavigationContainer>
+    <RootStack.Navigator headerMode="none">
+      <RootStack.Screen name={screens.authStack} component={AuthStack} />
+      <RootStack.Screen name={screens.drawerStack} component={DrawerStack} />
+    </RootStack.Navigator>
   );
 };
 
-export default NavigationStack;
+export default AppNavigator;

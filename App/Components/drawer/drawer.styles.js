@@ -1,11 +1,11 @@
-import {StyleSheet} from 'react-native';
-import {textStyle} from '../../constants';
-import {theme} from '../../theme';
+import { StyleSheet } from 'react-native';
+import { textStyle } from '../../constants';
+import { theme } from '../../theme';
 
-const {colors} = theme;
+const { colors } = theme;
 
 export default StyleSheet.create({
-  container: {height: '100%'},
+  container: { height: '100%', backgroundColor: 'white' },
   image: {
     width: '100%',
     height: 200,
@@ -22,5 +22,5 @@ export default StyleSheet.create({
     paddingLeft: 10,
     ...textStyle.heading,
   },
-  scrollViewContainer: {paddingTop: 30},
+  scrollViewContainer: { paddingTop: 30 },
 });

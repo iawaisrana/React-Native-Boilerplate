@@ -1,5 +1,5 @@
-import {SERVER_URL, END_POINTS} from '../../config';
-import {API} from '../../helpers';
+import { SERVER_URL, END_POINTS } from '../../config';
+import { API } from '../../helpers';
 
 export function login(params) {
   return API.fetch({

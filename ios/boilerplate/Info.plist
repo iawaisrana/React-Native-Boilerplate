@@ -29,8 +29,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>insert</string>
-				<string>"REVERSED_CLIENT_ID"</string>
+				<string>$(RNC_REVERSED_CLIENT_ID)</string>
 			</array>
 		</dict>
 		<dict>
@@ -38,19 +37,18 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>insert</string>
-				<string>"fb_login_protocol_scheme"</string>
+				<string>$(RNC_FacebookLoginProtocolScheme)</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>CodePushDeploymentKey</key>
-	<string>$(CodePushDeploymentKey)</string>
+	<string>$(RNC_CodePushDeploymentKey)</string>
 	<key>FacebookAppID</key>
-	<string/>
+	<string>$(RNC_FacebookAppID)</string>
 	<key>FacebookDisplayName</key>
-	<string>Start Up</string>
+	<string>$(RNC_AppName)</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -78,7 +76,7 @@
 		<string>armv7</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>AntDesign.ttf</string>

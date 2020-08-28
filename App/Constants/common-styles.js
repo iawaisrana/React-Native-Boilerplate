@@ -1,18 +1,24 @@
-import {Dimensions, Platform} from 'react-native';
+import { Dimensions, Platform } from 'react-native';
 
 export const os = Platform.OS;
 
 export const width = Dimensions.get('window').width;
 export const height = Dimensions.get('screen').height;
 
-const DESIGN_DIMENSIONS = {width: 375, height: 811};
+const DESIGN_DIMENSIONS = { width: 375, height: 812 };
 
 export const getPercentageHeight = (heightParam) => {
-  return height * (heightParam / DESIGN_DIMENSIONS.height);
+  return Platform.select({
+    ios: height * (heightParam / DESIGN_DIMENSIONS.height),
+    android: heightParam,
+  });
 };
 
 export const getPercentageWidth = (widthParam) => {
-  return width * (widthParam / DESIGN_DIMENSIONS.width);
+  return Platform.select({
+    ios: width * (widthParam / DESIGN_DIMENSIONS.width),
+    android: widthParam,
+  });
 };
 
 export const textStyle = {

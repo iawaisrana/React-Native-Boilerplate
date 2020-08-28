@@ -6,4 +6,4 @@ const images = {
   icon,
 };
 
-export {images};
+export { images };

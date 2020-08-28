@@ -1,8 +1,7 @@
-import {Dimensions} from 'react-native';
+import { Dimensions } from 'react-native';
 import LightThemeColors from './light-theme-colors';
-import fonts from './fonts';
 
-const {width, height} = Dimensions.get('screen');
+const { width, height } = Dimensions.get('screen');
 
 export default {
   button: {
@@ -13,9 +12,6 @@ export default {
   },
   colors: {
     ...LightThemeColors,
-  },
-  fonts: {
-    ...fonts,
   },
   screen: {
     width,

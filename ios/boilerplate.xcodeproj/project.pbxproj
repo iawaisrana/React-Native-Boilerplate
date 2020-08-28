@@ -47,6 +47,10 @@
 		A41F6655E06DC53C6E207059 /* libPods-boilerplate-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4509E969860F335EA9817F27 /* libPods-boilerplate-tvOS.a */; };
 		AA229FF6C1634DB28AA6BE22 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80663627A0AF419BAC87B862 /* FontAwesome5_Brands.ttf */; };
 		AD3127FB24DDABDC003AB0AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD3127FA24DDABDC003AB0AF /* GoogleService-Info.plist */; };
+		ADAE268924F937C500A83CF6 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ADAE268824F937C500A83CF6 /* Config.xcconfig */; };
+		ADAE268A24F937C500A83CF6 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ADAE268824F937C500A83CF6 /* Config.xcconfig */; };
+		ADAE268B24F937C500A83CF6 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ADAE268824F937C500A83CF6 /* Config.xcconfig */; };
+		ADAE268C24F937C500A83CF6 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ADAE268824F937C500A83CF6 /* Config.xcconfig */; };
 		B3AF75F3E5DE4CDA87FC7C3A /* SFProDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EDD5D184CEF4B66942DC424 /* SFProDisplay-Light.otf */; };
 		B440B99C67814253901AB15A /* libPods-boilerplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA00B87CABC4BFADB28B7E5 /* libPods-boilerplate.a */; };
 		B5AAC9836149434494C25B6F /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A55B84551B24BF1BC0B3DCD /* Roboto_medium.ttf */; };
@@ -130,6 +134,7 @@
 		8ED2331C6D134B5F9E9E32BB /* SFProDisplay-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-LightItalic.otf"; path = "../App/Assets/Fonts/SFProDisplay-LightItalic.otf"; sourceTree = "<group>"; };
 		992EE0FF0C374DF0940BA2C3 /* SFProDisplay-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-BlackItalic.otf"; path = "../App/Assets/Fonts/SFProDisplay-BlackItalic.otf"; sourceTree = "<group>"; };
 		AD3127FA24DDABDC003AB0AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADAE268824F937C500A83CF6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		AF7B606DF515443E91AFE835 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
 		B60021F385A14842B9BAADE6 /* SFProDisplay-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-MediumItalic.otf"; path = "../App/Assets/Fonts/SFProDisplay-MediumItalic.otf"; sourceTree = "<group>"; };
 		B791581BFAFD4F4B96CC425E /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
@@ -299,6 +304,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				ADAE268824F937C500A83CF6 /* Config.xcconfig */,
 				04BF00A42478F2F00033FA00 /* AppCenter-Config.plist */,
 				13B07FAE1A68108700A75B9A /* boilerplate */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -459,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAE268A24F937C500A83CF6 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +513,7 @@
 				5A41CE6D1CFD4D12BAD10129 /* Roboto.ttf in Resources */,
 				B79DF86C345B4BF29ED50512 /* rubicon-icon-font.ttf in Resources */,
 				D5D687BC062C43CC9D416FEF /* SimpleLineIcons.ttf in Resources */,
+				ADAE268924F937C500A83CF6 /* Config.xcconfig in Resources */,
 				90FC6241617F449AA420C52B /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +522,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAE268B24F937C500A83CF6 /* Config.xcconfig in Resources */,
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +531,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAE268C24F937C500A83CF6 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -902,7 +912,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = boilerplate/boilerplate.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				CodePushDeploymentKey = "insert here";
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -931,7 +940,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = boilerplate/boilerplate.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				CodePushDeploymentKey = "insert here";
 				INFOPLIST_FILE = boilerplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1058,6 +1066,7 @@
 		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADAE268824F937C500A83CF6 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -1118,6 +1127,7 @@
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADAE268824F937C500A83CF6 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;

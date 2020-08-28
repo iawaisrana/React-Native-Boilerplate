@@ -1,7 +1,7 @@
-import {connect} from 'react-redux';
-import {authActionsCreator} from '../actions';
+import { connect } from 'react-redux';
+import { authActionsCreator } from '../actions';
 
-function mapStateToProps({AuthData}) {
+function mapStateToProps({ AuthData }) {
   return {
     AuthData,
   };

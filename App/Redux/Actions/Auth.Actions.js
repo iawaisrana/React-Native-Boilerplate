@@ -1,4 +1,4 @@
-import {createAction} from 'redux-actions';
+import { createAction } from 'redux-actions';
 import {
   LOGIN_REQUEST,
   LOGIN_SUCCESS,

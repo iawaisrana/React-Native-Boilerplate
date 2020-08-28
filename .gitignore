@@ -60,3 +60,6 @@ buck-out/
 /ios/Pods/
 
 /ios/GoogleService-Info.plist
+
+# react-native-config codegen
+ios/tmp.xcconfig

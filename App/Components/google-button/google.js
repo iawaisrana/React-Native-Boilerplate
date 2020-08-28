@@ -1,10 +1,9 @@
-/* eslint-disable react/prop-types */
+import { GoogleSignin, statusCodes } from '@react-native-community/google-signin';
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {withTheme} from 'react-native-paper';
-import {useTranslation} from 'react-i18next';
-import {useDispatch, useSelector} from 'react-redux';
-import {GoogleSignin, statusCodes} from '@react-native-community/google-signin';
+import { useTranslation } from 'react-i18next';
+import { Text, TouchableOpacity, View } from 'react-native';
+import { withTheme } from 'react-native-paper';
+import styles from './google.styles';
 
 // uncomment and provide webClientId
 // GoogleSignin.configure({
@@ -12,16 +11,14 @@ import {GoogleSignin, statusCodes} from '@react-native-community/google-signin';
 // });
 
 function GoogleButton(props) {
-  const dispatch = useDispatch();
-  const isLoading = useSelector((state) => state.loading.isLoading);
-  const {colors, fonts, screen} = props.theme;
+  const { colors } = props.theme;
   const [t, i18n] = useTranslation();
 
   const i18 = (key) => {
     return t(key);
   };
 
-  const googleLogin = async () => {
+  const onPress = async () => {
     try {
       await GoogleSignin.hasPlayServices();
 
@@ -56,39 +53,12 @@ function GoogleButton(props) {
   };
 
   return (
-    <TouchableOpacity
-      disabled={isLoading ? true : false}
-      onPress={() => googleLogin()}
-      style={{width: '100%'}}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
       <View style={styles.button}>
-        <Text style={{color: colors.white}}>
-          {i18('Component.continueWithGoogle')}
-        </Text>
+        <Text style={{ color: colors.white }}>{i18('Component.continueWithGoogle')}</Text>
       </View>
     </TouchableOpacity>
   );
 }
 
 export default withTheme(GoogleButton);
-
-const styles = StyleSheet.create({
-  button: {
-    width: '90%',
-    height: 50,
-    borderRadius: 30,
-    shadowColor: 'black',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 2,
-    elevation: 2,
-    alignSelf: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-    alignItems: 'center',
-    marginTop: 15,
-    backgroundColor: '#DD4B39',
-  },
-});

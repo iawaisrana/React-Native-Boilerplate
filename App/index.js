@@ -1,14 +1,16 @@
-import 'react-native-gesture-handler';
-import React, {Suspense, useEffect} from 'react';
-import {Platform, SafeAreaView, StyleSheet} from 'react-native';
-import AppNavigator from './navigation';
-import {PushNotification} from './components';
-import {Provider as PaperProvider} from 'react-native-paper';
-import Provider from './redux/provider';
-import {Root} from 'native-base';
-import SplashScreen from 'react-native-splash-screen';
+import { NavigationContainer } from '@react-navigation/native';
+import { Root } from 'native-base';
+import React, { Suspense, useEffect } from 'react';
+import { Platform, SafeAreaView, StyleSheet } from 'react-native';
 import codePush from 'react-native-code-push';
-import {enableScreens} from 'react-native-screens';
+import DropdownAlert from 'react-native-dropdownalert';
+import 'react-native-gesture-handler';
+import { Provider as PaperProvider } from 'react-native-paper';
+import { enableScreens } from 'react-native-screens';
+import SplashScreen from 'react-native-splash-screen';
+import { DropDownHolder, PushNotification } from './components';
+import AppNavigator from './navigation/root-stack';
+import { theme } from './theme';
 
 enableScreens();
 
@@ -25,10 +27,11 @@ const App = () => {
       <Root>
         <SafeAreaView style={styles.container}>
           <PaperProvider>
-            <Provider>
+            <NavigationContainer theme={theme}>
               <AppNavigator />
               <PushNotification />
-            </Provider>
+              <DropdownAlert ref={(ref) => DropDownHolder.setDropDown(ref)} />
+            </NavigationContainer>
           </PaperProvider>
         </SafeAreaView>
       </Root>

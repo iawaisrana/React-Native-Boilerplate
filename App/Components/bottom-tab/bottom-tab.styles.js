@@ -1,8 +1,8 @@
-import {StyleSheet} from 'react-native';
-import {textStyle} from '../../constants';
-import {theme} from '../../theme';
+import { StyleSheet } from 'react-native';
+import { textStyle } from '../../constants';
+import { theme } from '../../theme';
 
-const {colors} = theme;
+const { colors } = theme;
 
 export default StyleSheet.create({
   container: {
@@ -14,6 +14,6 @@ export default StyleSheet.create({
     height: 80,
     backgroundColor: colors.primary,
   },
-  tab: {justifyContent: 'center', alignItems: 'center'},
-  tabText: {color: colors.white, ...textStyle.medium, paddingTop: 3},
+  tab: { justifyContent: 'center', alignItems: 'center' },
+  tabText: { color: colors.white, ...textStyle.medium, paddingTop: 3 },
 });

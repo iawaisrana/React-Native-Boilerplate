@@ -1,18 +1,17 @@
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
-import {StyleSheet} from 'react-native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {BottomTab} from '../components';
-import {screens} from '../config';
-import AppStack from './auth-stack';
+import { StyleSheet } from 'react-native';
+import { BottomTab } from '../components';
+import { screens } from '../config';
+import AppStack from './app-stack';
 
 const BottomTabStack = createBottomTabNavigator();
 
-export default function authStack() {
+export default function TabNavigator() {
   return (
     <BottomTabStack.Navigator
       headerMode="none"
       tabBar={(props) => <BottomTab {...props} />}
-      initialRouteName={screens.appStack}
       activeColor={'#f0edf6'}
       inactiveColor={'red'}
       barStyle={styles.barStyle}>
@@ -22,5 +21,5 @@ export default function authStack() {
 }
 
 const styles = StyleSheet.create({
-  barStyle: {backgroundColor: '#694fad'},
+  barStyle: { backgroundColor: '#694fad' },
 });

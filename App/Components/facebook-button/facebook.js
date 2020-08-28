@@ -1,19 +1,12 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {
-  AccessToken,
-  GraphRequest,
-  GraphRequestManager,
-  LoginManager,
-} from 'react-native-fbsdk';
-import {useDispatch, useSelector} from 'react-redux';
-import {withTheme} from 'react-native-paper';
-import {useTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+import { Text, TouchableOpacity, View } from 'react-native';
+import { AccessToken, GraphRequest, GraphRequestManager, LoginManager } from 'react-native-fbsdk';
+import { withTheme } from 'react-native-paper';
+import styles from './facebook.styles';
 
 function FacebookButton(props) {
-  const dispatch = useDispatch();
-  const isLoading = useSelector((state) => state.loading.isLoading);
-  const {screen, colors, introScreen} = props.theme;
+  const { colors } = props.theme;
   const [t, i18n] = useTranslation();
 
   const i18 = (key) => {
@@ -59,7 +52,7 @@ function FacebookButton(props) {
     new GraphRequestManager().addRequest(infoRequest).start();
   };
 
-  const fbLogin = () => {
+  const onPress = () => {
     LoginManager.logInWithPermissions(['public_profile', 'email']).then(
       function (result) {
         console.log('in function', result);
@@ -80,41 +73,12 @@ function FacebookButton(props) {
   };
 
   return (
-    <TouchableOpacity
-      disabled={isLoading ? true : false}
-      onPress={() => {
-        fbLogin();
-      }}
-      style={{width: '100%'}}>
+    <TouchableOpacity onPress={onPress} style={styles.container}>
       <View style={styles.button}>
-        <Text style={{color: colors.white}}>
-          {i18('Component.continueWithFacebook')}
-        </Text>
+        <Text style={{ color: colors.white }}>{i18('Component.continueWithFacebook')}</Text>
       </View>
     </TouchableOpacity>
   );
 }
 
 export default withTheme(FacebookButton);
-
-const styles = StyleSheet.create({
-  button: {
-    width: '90%',
-    height: 50,
-    borderRadius: 30,
-    shadowColor: 'black',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 2,
-    elevation: 2,
-    alignSelf: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-    alignItems: 'center',
-    marginTop: 15,
-    backgroundColor: '#3B5999',
-  },
-});

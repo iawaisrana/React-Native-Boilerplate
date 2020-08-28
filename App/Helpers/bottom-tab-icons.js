@@ -1,12 +1,9 @@
-import React from 'redux-actions';
-import {Appearance} from 'react-native';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import React from 'react';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import { theme } from '../theme';
 
-import {DarkTheme, LightTheme} from '../theme';
-
-const colorScheme = Appearance.getColorScheme();
-const {colors} = colorScheme == 'dark' ? DarkTheme : LightTheme;
+const { colors } = theme;
 
 const tabIcons = {
   search: <FontAwesome name="search" color={colors.white} size={25} />,
@@ -14,4 +11,4 @@ const tabIcons = {
   profile: <MaterialIcons name="person" color={colors.white} size={25} />,
 };
 
-export {tabIcons};
+export { tabIcons };

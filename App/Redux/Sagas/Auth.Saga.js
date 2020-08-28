@@ -1,10 +1,10 @@
-import {take, put, call, fork, all} from 'redux-saga/effects';
+import { take, put, call, fork, all } from 'redux-saga/effects';
 import AsyncStorage from '@react-native-community/async-storage';
-import {LOGIN_REQUEST, REGISTER_REQUEST} from '../types';
-import {authActionsCreator} from '../actions';
-import {login, signUp} from '../api';
+import { LOGIN_REQUEST, REGISTER_REQUEST } from '../types';
+import { authActionsCreator } from '../actions';
+import { login, signUp } from '../api';
 
-function* loginSaga({payload}) {
+function* loginSaga({ payload }) {
   try {
     const response = yield call(login, payload);
     if (response.success) {
@@ -13,7 +13,7 @@ function* loginSaga({payload}) {
         ...response.user,
         token: response.success.token,
       };
-      yield put(authActionsCreator.loginSuccess({user}));
+      yield put(authActionsCreator.loginSuccess({ user }));
     }
   } catch (err) {
     yield put(
@@ -24,7 +24,7 @@ function* loginSaga({payload}) {
   }
 }
 
-function* signupSaga({payload}) {
+function* signupSaga({ payload }) {
   try {
     const response = yield call(signUp, payload);
     if (response.success) {
@@ -33,7 +33,7 @@ function* signupSaga({payload}) {
         ...response.success.user,
         token: response.success.token,
       };
-      yield put(authActionsCreator.registerSuccess({user}));
+      yield put(authActionsCreator.registerSuccess({ user }));
     }
   } catch (error) {
     yield put(

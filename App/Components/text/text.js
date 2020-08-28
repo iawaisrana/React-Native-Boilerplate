@@ -1,16 +1,12 @@
 import React from 'react';
-import {StyleSheet, Text as RCText} from 'react-native';
-import {FontHelper} from '../../helpers';
+import { StyleSheet, Text as RCText } from 'react-native';
+import { FontHelper } from '../../helpers';
 import _ from 'lodash';
 
 const Text = (props) => {
-  var {style} = props;
+  var { style } = props;
   if (style instanceof Array) {
-    style = _.map(
-      style,
-      (styleObject) =>
-        styleObject && FontHelper(StyleSheet.flatten(styleObject)),
-    );
+    style = _.map(style, (styleObject) => styleObject && FontHelper(StyleSheet.flatten(styleObject)));
   } else {
     style = FontHelper(StyleSheet.flatten(style || {}));
   }
@@ -22,4 +18,4 @@ const Text = (props) => {
   );
 };
 
-export {Text};
+export { Text };

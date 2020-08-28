@@ -1,17 +1,11 @@
 import React from 'react';
-import {
-  I18nManager,
-  SafeAreaView,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-} from 'react-native';
-import {useTranslation} from 'react-i18next';
+import { I18nManager, SafeAreaView, ScrollView, Text, TouchableOpacity } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import FastImage from 'react-native-fast-image';
 import AsyncStorage from '@react-native-community/async-storage';
 import RNRestart from 'react-native-restart';
-import {drawerIcons} from '../../helpers';
-import {images} from '../../constants';
+import { drawerIcons } from '../../helpers';
+import { images } from '../../constants';
 import styles from './drawer.styles';
 
 function Drawer(props) {
@@ -50,9 +44,7 @@ function Drawer(props) {
     <SafeAreaView style={styles.container}>
       <FastImage source={images.icon} style={styles.image} />
       <ScrollView contentContainerStyle={styles.scrollViewContainer}>
-        <TouchableOpacity
-          style={styles.itemContainer}
-          onPress={() => changeLanguageWithRTL()}>
+        <TouchableOpacity style={styles.itemContainer} onPress={() => changeLanguageWithRTL()}>
           {drawerIcons.language}
           <Text style={styles.itemText}>{i18('Drawer.changeLanguage')}</Text>
         </TouchableOpacity>
@@ -61,4 +53,4 @@ function Drawer(props) {
   );
 }
 
-export {Drawer};
+export { Drawer };

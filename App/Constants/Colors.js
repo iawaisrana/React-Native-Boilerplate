@@ -7,4 +7,4 @@ const COLORS = {
   GRAY: '#A6A6A6',
 };
 
-export {COLORS};
+export { COLORS };
