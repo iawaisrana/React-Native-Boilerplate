@@ -1,9 +1,9 @@
 import React from 'react';
-import { TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { TouchableOpacity, View } from 'react-native';
 import { Text } from '../../components';
-import styles from './bottom-tab.styles';
 import { tabIcons } from '../../helpers';
+import styles from './bottom-tab.styles';
 
 function BottomTab(props) {
   const [t, i18n] = useTranslation();
