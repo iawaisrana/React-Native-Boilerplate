@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     width: 320,
     height: 320,
   },
-  buttonContainer:{ flex: 1, justifyContent: 'center', alignItems: 'center' }
+  buttonContainer: { flex: 1, justifyContent: 'center', alignItems: 'center' },
 });
 
 export default styles;
