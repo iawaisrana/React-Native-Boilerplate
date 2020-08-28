@@ -44,7 +44,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>CodePushDeploymentKey</key>
-	<string>$(RNC_CodePushDeploymentKey)</string>
+	<string>$(RNC_CodePushDeploymentKey_iOS)</string>
 	<key>FacebookAppID</key>
 	<string>$(RNC_FacebookAppID)</string>
 	<key>FacebookDisplayName</key>
