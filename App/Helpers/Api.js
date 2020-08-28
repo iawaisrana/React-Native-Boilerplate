@@ -1,6 +1,6 @@
+import AsyncStorage from '@react-native-community/async-storage';
 import axios from 'axios';
 import _ from 'lodash';
-import AsyncStorage from '@react-native-community/async-storage';
 
 class API {
   static async headers() {

@@ -1,7 +1,7 @@
+import _ from 'lodash';
 import React from 'react';
 import { StyleSheet, Text as RCText } from 'react-native';
 import { FontHelper } from '../../helpers';
-import _ from 'lodash';
 
 const Text = (props) => {
   var { style } = props;
