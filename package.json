@@ -18,6 +18,7 @@
     "lint-fix": "eslint --fix .",
     "lint-check": "eslint .",
     "rename": "react-native-rename"
+    
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.9.0",
