@@ -1,0 +1,7 @@
+BUILD=staging
+FacebookAppID=662734981014014
+FacebookLoginProtocolScheme=662734981014014
+REVERSED_CLIENT_ID=com.googleusercontent.apps.1044973010936-bmn4ovtekobrd9udv0fauk1604ciil61
+CodePushDeploymentKey_Android=EnqRXUWBzS1LGIRhjCQmupG0l6Y5rXWxKwalr
+CodePushDeploymentKey_iOS=8ivo9K3jKQbT6is3j-HzPS7NLh0jyyPySx6Gn
+AppName=BoilerPlate

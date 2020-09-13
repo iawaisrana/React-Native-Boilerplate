@@ -1,0 +1,30 @@
+{
+  "Intro": {
+    "title1": "Titre 1",
+    "description1": "Description 1",
+    "title2": "Titre 2",
+    "description2": "Description 2",
+    "title3": "Titre 3",
+    "description3": "Description 3",
+    "skip": "sauter"
+  },
+
+  "Home": {
+    "title": "Accueil"
+  },
+
+  "Drawer": {
+    "changeLanguage": "Changer de langue"
+  },
+
+  "BottomTab": {
+    "search": "Chercher",
+    "home": "Accueil",
+    "profile": "Profil"
+  },
+
+  "Component": {
+    "continueWithFacebook": "Continuer avec Facebook",
+    "continueWithGoogle": "Continuer avec Google"
+  }
+}

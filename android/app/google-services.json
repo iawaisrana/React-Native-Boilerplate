@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1044973010936",
+    "firebase_url": "https://react-native-boilerplate-c60e7.firebaseio.com",
+    "project_id": "react-native-boilerplate-c60e7",
+    "storage_bucket": "react-native-boilerplate-c60e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044973010936:android:b17186d235afd5819c600d",
+        "android_client_info": {
+          "package_name": "com.boilerplate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044973010936-bc0ac1qrk89r25da4nvlgl9dt7fmijdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEy_UYba-Kw1nqJtDQCwWL3W8oA3DTgPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044973010936-bc0ac1qrk89r25da4nvlgl9dt7fmijdd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1044973010936-bmn4ovtekobrd9udv0fauk1604ciil61.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.boilerpoint"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
