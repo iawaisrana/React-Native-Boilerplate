@@ -34,7 +34,6 @@ const PushNotification = (props) => {
       //process data message
       console.log(message);
     });
-    
   }, []);
 
   const getToken = async () => {

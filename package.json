@@ -13,11 +13,12 @@
     "android:staging": "ENVFILE=.env.staging  react-native run-android --variant=release",
     "android:production": "ENVFILE=.env.production react-native run-android --variant=release",
     "test": "jest",
-    "prettier-fix": "prettier --write **/*.js",
+    "prettier-fix": "prettier --write app/**/*.js",
     "prettier-check": "prettier --list-different **/*.js",
     "lint-fix": "eslint --fix .",
     "lint-check": "eslint .",
     "rename": "react-native-rename"
+    
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.9.0",
