@@ -8,7 +8,6 @@ export const getUser = (state) => state.auth.user
 
 export function* startupSaga() {
   const user = yield select(getUser)
-  console.log(user)
   const isUserLoggedIn = !_.isEmpty(user.accessToken)
 
   if (isUserLoggedIn) {
