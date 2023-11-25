@@ -1,5 +1,5 @@
 module.exports = function (api) {
-  api.cache(true);
+  api.cache(true)
   return {
     presets: ['module:metro-react-native-babel-preset'],
     plugins: [
@@ -8,8 +8,21 @@ module.exports = function (api) {
         {
           root: ['./app'],
           alias: {
-            test: './test',
+            '*': './app',
+            'assets/*': './app/assets/*',
+            'components/*': './app/components/*',
+            'config/*': './app/configs/*',
+            constants: './app/constants/*',
+            'containers/*': './app/containers/*',
+            'localization/*': './app/localization/*',
+            'navigation/*': './app/navigation/*',
+            'services/*': './app/services/*',
+            'redux/*': './app/redux/*',
+            'theme/*': './app/theme/*',
+            'utils/*': './app/utils/*',
+            test: 'test/*',
           },
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },
       ],
       [
@@ -18,6 +31,7 @@ module.exports = function (api) {
           extensions: ['.svg'],
         },
       ],
+      'react-native-reanimated/plugin',
     ],
-  };
-};
+  }
+}

@@ -7,6 +7,9 @@
 #import <AppCenterReactNativeAnalytics.h>
 #import <AppCenterReactNativeCrashes.h>
 #import <React/RCTBundleURLProvider.h>
+#import <AuthenticationServices/AuthenticationServices.h>
+#import <SafariServices/SafariServices.h>
+#import <FBSDKCoreKit/FBSDKCoreKit-Swift.h>
 
 @implementation AppDelegate
 
@@ -21,9 +24,11 @@
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
   
+  BOOL didFinishLaunchingWithOptions = [super application:application didFinishLaunchingWithOptions:launchOptions];
+  
   [RNSplashScreen show];
   
-  return [super application:application didFinishLaunchingWithOptions:launchOptions];
+  return didFinishLaunchingWithOptions;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options {

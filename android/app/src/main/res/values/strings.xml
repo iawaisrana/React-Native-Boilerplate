@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">react_native_boilerplate</string>
+    <string name="app_name">Boilerplate App</string>
     <string name="facebook_app_id">@string/FacebookAppID</string>
     <string name="facebook_client_token">@string/FacebookClientToken</string>
     <string moduleConfig="true" name="CodePushDeploymentKey">@string/CodePushDeploymentKey_Android</string>

@@ -1,20 +1,17 @@
-import {FontHelper} from 'Helpers';
-import _ from 'lodash';
-import React from 'react';
-import {StyleSheet, Text as RCText} from 'react-native';
+import { FontHelper } from 'utils/fontHelper'
+import _ from 'lodash'
+import React from 'react'
+import { StyleSheet, Text as RCText } from 'react-native'
 
-const Text = ({style, children}) => {
-  let textStyle = {...style};
+const Text = ({ style, children }) => {
+  let textStyle = { ...style }
   if (textStyle instanceof Array) {
-    textStyle = _.map(
-      style,
-      styleObject => styleObject && FontHelper(StyleSheet.flatten(styleObject)),
-    );
+    textStyle = _.map(style, (styleObject) => styleObject && FontHelper(StyleSheet.flatten(styleObject)))
   } else {
-    textStyle = FontHelper(StyleSheet.flatten(style || {}));
+    textStyle = FontHelper(StyleSheet.flatten(style || {}))
   }
 
-  return <RCText style={style}>{children}</RCText>;
-};
+  return <RCText style={style}>{children}</RCText>
+}
 
-export {Text};
+export default Text

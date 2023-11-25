@@ -8,31 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* react_native_boilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* react_native_boilerplateTests.m */; };
+		11187EEEA7094E80B2238ADA /* SFProDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70C906A207C14D59A4E1375D /* SFProDisplay-Regular.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2B5BC2B6FBC54DA1A85EB234 /* SFProDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54BF7BA8CC524BD4A50C0817 /* SFProDisplay-Thin.otf */; };
+		346698CA623C40A98104258C /* SFProDisplay-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 272DE848C1E741F38A1B98A3 /* SFProDisplay-LightItalic.otf */; };
+		4D033C02993847768FDF10BC /* SFProDisplay-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A005F947D8DA4B048B483C73 /* SFProDisplay-ThinItalic.otf */; };
+		61512A1FB73E4124B59438D5 /* SFProDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21431FD8F69B4D75AA89EEC2 /* SFProDisplay-Semibold.otf */; };
+		6947644AAF3F4C86BB204D01 /* SFProDisplay-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFE831C721D9415BAF895B00 /* SFProDisplay-UltralightItalic.otf */; };
+		719205AA90E94F35AD452D49 /* SFProDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D882195570462CBCF4B78E /* SFProDisplay-Heavy.otf */; };
 		8163EC59D881ABE64B4061A4 /* Pods_react_native_boilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50B84FF327CB23154F60A28 /* Pods_react_native_boilerplate.framework */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		ADE8959B2B08D62C0076F524 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADE8959A2B08D62C0076F524 /* GoogleService-Info.plist */; };
-		F3CE3AB7B2B8B597571C3D88 /* Pods_react_native_boilerplate_react_native_boilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6872AE3F3EB66D692E8D5D2 /* Pods_react_native_boilerplate_react_native_boilerplateTests.framework */; };
-		B2A8D8895665463D9102DDAF /* SFProDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 671267BB334F4A44AE8363F6 /* SFProDisplay-Black.otf */; };
-		CB14CBE8C8344A228B95B98A /* SFProDisplay-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 483D31D064C24D2FB528AB7B /* SFProDisplay-BlackItalic.otf */; };
-		BBCB43E0C7F5408A89DE7D57 /* SFProDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18062D18155748D1A3017027 /* SFProDisplay-Bold.otf */; };
-		D72A83030C6B4B78AB60A392 /* SFProDisplay-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9DC2FFEAA1EF4C72B09D4FB4 /* SFProDisplay-BoldItalic.otf */; };
-		719205AA90E94F35AD452D49 /* SFProDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3D882195570462CBCF4B78E /* SFProDisplay-Heavy.otf */; };
 		8C10D7203E2C452088CA5941 /* SFProDisplay-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 565E4C07C32541AE9909C291 /* SFProDisplay-HeavyItalic.otf */; };
 		A79652098ED1461B8C425BC3 /* SFProDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FCFCD785F1F140E1B97D43C0 /* SFProDisplay-Light.otf */; };
-		346698CA623C40A98104258C /* SFProDisplay-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 272DE848C1E741F38A1B98A3 /* SFProDisplay-LightItalic.otf */; };
+		ADE8959B2B08D62C0076F524 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADE8959A2B08D62C0076F524 /* GoogleService-Info.plist */; };
+		B2A8D8895665463D9102DDAF /* SFProDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 671267BB334F4A44AE8363F6 /* SFProDisplay-Black.otf */; };
+		BBCB43E0C7F5408A89DE7D57 /* SFProDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18062D18155748D1A3017027 /* SFProDisplay-Bold.otf */; };
+		CB14CBE8C8344A228B95B98A /* SFProDisplay-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 483D31D064C24D2FB528AB7B /* SFProDisplay-BlackItalic.otf */; };
+		D66EFC2366494743BCFD0495 /* SFProDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A505D6091B9D4911B63541A8 /* SFProDisplay-Ultralight.otf */; };
+		D71F8A3D07024C2FA703F962 /* SFProDisplay-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4E23423EDB274AD1AFE5A152 /* SFProDisplay-SemiboldItalic.otf */; };
+		D72A83030C6B4B78AB60A392 /* SFProDisplay-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9DC2FFEAA1EF4C72B09D4FB4 /* SFProDisplay-BoldItalic.otf */; };
 		E2366FC5665C4FC192241191 /* SFProDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4E22C5922D8F48C0AC8A1F7C /* SFProDisplay-Medium.otf */; };
 		E650EBDFEAF24B158FBCE027 /* SFProDisplay-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E42A86DFB525476996DF6DC6 /* SFProDisplay-MediumItalic.otf */; };
-		11187EEEA7094E80B2238ADA /* SFProDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 70C906A207C14D59A4E1375D /* SFProDisplay-Regular.otf */; };
+		F3CE3AB7B2B8B597571C3D88 /* Pods_react_native_boilerplate_react_native_boilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6872AE3F3EB66D692E8D5D2 /* Pods_react_native_boilerplate_react_native_boilerplateTests.framework */; };
 		FE124B32CB224A179886A643 /* SFProDisplay-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A93ED916771476CBC172E5C /* SFProDisplay-RegularItalic.otf */; };
-		61512A1FB73E4124B59438D5 /* SFProDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21431FD8F69B4D75AA89EEC2 /* SFProDisplay-Semibold.otf */; };
-		D71F8A3D07024C2FA703F962 /* SFProDisplay-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4E23423EDB274AD1AFE5A152 /* SFProDisplay-SemiboldItalic.otf */; };
-		2B5BC2B6FBC54DA1A85EB234 /* SFProDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54BF7BA8CC524BD4A50C0817 /* SFProDisplay-Thin.otf */; };
-		4D033C02993847768FDF10BC /* SFProDisplay-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A005F947D8DA4B048B483C73 /* SFProDisplay-ThinItalic.otf */; };
-		D66EFC2366494743BCFD0495 /* SFProDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A505D6091B9D4911B63541A8 /* SFProDisplay-Ultralight.otf */; };
-		6947644AAF3F4C86BB204D01 /* SFProDisplay-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFE831C721D9415BAF895B00 /* SFProDisplay-UltralightItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,42 +49,42 @@
 		00E356EE1AD99517003FC87E /* react_native_boilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = react_native_boilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* react_native_boilerplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = react_native_boilerplateTests.m; sourceTree = "<group>"; };
+		0A93ED916771476CBC172E5C /* SFProDisplay-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-RegularItalic.otf"; path = "../app/assets/fonts/SFProDisplay-RegularItalic.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* react_native_boilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = react_native_boilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = react_native_boilerplate/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = react_native_boilerplate/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = react_native_boilerplate/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = react_native_boilerplate/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = react_native_boilerplate/main.m; sourceTree = "<group>"; };
+		18062D18155748D1A3017027 /* SFProDisplay-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Bold.otf"; path = "../app/assets/fonts/SFProDisplay-Bold.otf"; sourceTree = "<group>"; };
+		21431FD8F69B4D75AA89EEC2 /* SFProDisplay-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Semibold.otf"; path = "../app/assets/fonts/SFProDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		272DE848C1E741F38A1B98A3 /* SFProDisplay-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-LightItalic.otf"; path = "../app/assets/fonts/SFProDisplay-LightItalic.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-react_native_boilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_boilerplate.debug.xcconfig"; path = "Target Support Files/Pods-react_native_boilerplate/Pods-react_native_boilerplate.debug.xcconfig"; sourceTree = "<group>"; };
+		483D31D064C24D2FB528AB7B /* SFProDisplay-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-BlackItalic.otf"; path = "../app/assets/fonts/SFProDisplay-BlackItalic.otf"; sourceTree = "<group>"; };
+		4E22C5922D8F48C0AC8A1F7C /* SFProDisplay-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Medium.otf"; path = "../app/assets/fonts/SFProDisplay-Medium.otf"; sourceTree = "<group>"; };
+		4E23423EDB274AD1AFE5A152 /* SFProDisplay-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-SemiboldItalic.otf"; path = "../app/assets/fonts/SFProDisplay-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		54BF7BA8CC524BD4A50C0817 /* SFProDisplay-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Thin.otf"; path = "../app/assets/fonts/SFProDisplay-Thin.otf"; sourceTree = "<group>"; };
+		565E4C07C32541AE9909C291 /* SFProDisplay-HeavyItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-HeavyItalic.otf"; path = "../app/assets/fonts/SFProDisplay-HeavyItalic.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-react_native_boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_boilerplate.release.xcconfig"; path = "Target Support Files/Pods-react_native_boilerplate/Pods-react_native_boilerplate.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-react_native_boilerplate-react_native_boilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_boilerplate-react_native_boilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-react_native_boilerplate-react_native_boilerplateTests/Pods-react_native_boilerplate-react_native_boilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		671267BB334F4A44AE8363F6 /* SFProDisplay-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Black.otf"; path = "../app/assets/fonts/SFProDisplay-Black.otf"; sourceTree = "<group>"; };
+		70C906A207C14D59A4E1375D /* SFProDisplay-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Regular.otf"; path = "../app/assets/fonts/SFProDisplay-Regular.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = react_native_boilerplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-react_native_boilerplate-react_native_boilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_boilerplate-react_native_boilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-react_native_boilerplate-react_native_boilerplateTests/Pods-react_native_boilerplate-react_native_boilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		9DC2FFEAA1EF4C72B09D4FB4 /* SFProDisplay-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-BoldItalic.otf"; path = "../app/assets/fonts/SFProDisplay-BoldItalic.otf"; sourceTree = "<group>"; };
+		A005F947D8DA4B048B483C73 /* SFProDisplay-ThinItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-ThinItalic.otf"; path = "../app/assets/fonts/SFProDisplay-ThinItalic.otf"; sourceTree = "<group>"; };
+		A505D6091B9D4911B63541A8 /* SFProDisplay-Ultralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Ultralight.otf"; path = "../app/assets/fonts/SFProDisplay-Ultralight.otf"; sourceTree = "<group>"; };
 		A50B84FF327CB23154F60A28 /* Pods_react_native_boilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_react_native_boilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE895962B08C9A20076F524 /* react_native_boilerplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = react_native_boilerplate.entitlements; path = react_native_boilerplate/react_native_boilerplate.entitlements; sourceTree = "<group>"; };
 		ADE895982B08CB990076F524 /* AppCenter-Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "../../boilerplate/ios/AppCenter-Config.plist"; sourceTree = "<group>"; };
 		ADE895992B08CBCB0076F524 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		ADE8959A2B08D62C0076F524 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFE831C721D9415BAF895B00 /* SFProDisplay-UltralightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-UltralightItalic.otf"; path = "../app/assets/fonts/SFProDisplay-UltralightItalic.otf"; sourceTree = "<group>"; };
 		B6872AE3F3EB66D692E8D5D2 /* Pods_react_native_boilerplate_react_native_boilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_react_native_boilerplate_react_native_boilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3D882195570462CBCF4B78E /* SFProDisplay-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Heavy.otf"; path = "../app/assets/fonts/SFProDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		E42A86DFB525476996DF6DC6 /* SFProDisplay-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-MediumItalic.otf"; path = "../app/assets/fonts/SFProDisplay-MediumItalic.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		671267BB334F4A44AE8363F6 /* SFProDisplay-Black.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Black.otf"; path = "../app/assets/fonts/SFProDisplay-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		483D31D064C24D2FB528AB7B /* SFProDisplay-BlackItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-BlackItalic.otf"; path = "../app/assets/fonts/SFProDisplay-BlackItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		18062D18155748D1A3017027 /* SFProDisplay-Bold.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Bold.otf"; path = "../app/assets/fonts/SFProDisplay-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9DC2FFEAA1EF4C72B09D4FB4 /* SFProDisplay-BoldItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-BoldItalic.otf"; path = "../app/assets/fonts/SFProDisplay-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D3D882195570462CBCF4B78E /* SFProDisplay-Heavy.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Heavy.otf"; path = "../app/assets/fonts/SFProDisplay-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		565E4C07C32541AE9909C291 /* SFProDisplay-HeavyItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-HeavyItalic.otf"; path = "../app/assets/fonts/SFProDisplay-HeavyItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FCFCD785F1F140E1B97D43C0 /* SFProDisplay-Light.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Light.otf"; path = "../app/assets/fonts/SFProDisplay-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		272DE848C1E741F38A1B98A3 /* SFProDisplay-LightItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-LightItalic.otf"; path = "../app/assets/fonts/SFProDisplay-LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4E22C5922D8F48C0AC8A1F7C /* SFProDisplay-Medium.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Medium.otf"; path = "../app/assets/fonts/SFProDisplay-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E42A86DFB525476996DF6DC6 /* SFProDisplay-MediumItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-MediumItalic.otf"; path = "../app/assets/fonts/SFProDisplay-MediumItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		70C906A207C14D59A4E1375D /* SFProDisplay-Regular.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Regular.otf"; path = "../app/assets/fonts/SFProDisplay-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0A93ED916771476CBC172E5C /* SFProDisplay-RegularItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-RegularItalic.otf"; path = "../app/assets/fonts/SFProDisplay-RegularItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		21431FD8F69B4D75AA89EEC2 /* SFProDisplay-Semibold.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Semibold.otf"; path = "../app/assets/fonts/SFProDisplay-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4E23423EDB274AD1AFE5A152 /* SFProDisplay-SemiboldItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-SemiboldItalic.otf"; path = "../app/assets/fonts/SFProDisplay-SemiboldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		54BF7BA8CC524BD4A50C0817 /* SFProDisplay-Thin.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Thin.otf"; path = "../app/assets/fonts/SFProDisplay-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A005F947D8DA4B048B483C73 /* SFProDisplay-ThinItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-ThinItalic.otf"; path = "../app/assets/fonts/SFProDisplay-ThinItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A505D6091B9D4911B63541A8 /* SFProDisplay-Ultralight.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Ultralight.otf"; path = "../app/assets/fonts/SFProDisplay-Ultralight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AFE831C721D9415BAF895B00 /* SFProDisplay-UltralightItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-UltralightItalic.otf"; path = "../app/assets/fonts/SFProDisplay-UltralightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FCFCD785F1F140E1B97D43C0 /* SFProDisplay-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Light.otf"; path = "../app/assets/fonts/SFProDisplay-Light.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +149,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		58BA6FA122C04759AE9ABBA6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				671267BB334F4A44AE8363F6 /* SFProDisplay-Black.otf */,
+				483D31D064C24D2FB528AB7B /* SFProDisplay-BlackItalic.otf */,
+				18062D18155748D1A3017027 /* SFProDisplay-Bold.otf */,
+				9DC2FFEAA1EF4C72B09D4FB4 /* SFProDisplay-BoldItalic.otf */,
+				D3D882195570462CBCF4B78E /* SFProDisplay-Heavy.otf */,
+				565E4C07C32541AE9909C291 /* SFProDisplay-HeavyItalic.otf */,
+				FCFCD785F1F140E1B97D43C0 /* SFProDisplay-Light.otf */,
+				272DE848C1E741F38A1B98A3 /* SFProDisplay-LightItalic.otf */,
+				4E22C5922D8F48C0AC8A1F7C /* SFProDisplay-Medium.otf */,
+				E42A86DFB525476996DF6DC6 /* SFProDisplay-MediumItalic.otf */,
+				70C906A207C14D59A4E1375D /* SFProDisplay-Regular.otf */,
+				0A93ED916771476CBC172E5C /* SFProDisplay-RegularItalic.otf */,
+				21431FD8F69B4D75AA89EEC2 /* SFProDisplay-Semibold.otf */,
+				4E23423EDB274AD1AFE5A152 /* SFProDisplay-SemiboldItalic.otf */,
+				54BF7BA8CC524BD4A50C0817 /* SFProDisplay-Thin.otf */,
+				A005F947D8DA4B048B483C73 /* SFProDisplay-ThinItalic.otf */,
+				A505D6091B9D4911B63541A8 /* SFProDisplay-Ultralight.otf */,
+				AFE831C721D9415BAF895B00 /* SFProDisplay-UltralightItalic.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,32 +218,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		58BA6FA122C04759AE9ABBA6 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				671267BB334F4A44AE8363F6 /* SFProDisplay-Black.otf */,
-				483D31D064C24D2FB528AB7B /* SFProDisplay-BlackItalic.otf */,
-				18062D18155748D1A3017027 /* SFProDisplay-Bold.otf */,
-				9DC2FFEAA1EF4C72B09D4FB4 /* SFProDisplay-BoldItalic.otf */,
-				D3D882195570462CBCF4B78E /* SFProDisplay-Heavy.otf */,
-				565E4C07C32541AE9909C291 /* SFProDisplay-HeavyItalic.otf */,
-				FCFCD785F1F140E1B97D43C0 /* SFProDisplay-Light.otf */,
-				272DE848C1E741F38A1B98A3 /* SFProDisplay-LightItalic.otf */,
-				4E22C5922D8F48C0AC8A1F7C /* SFProDisplay-Medium.otf */,
-				E42A86DFB525476996DF6DC6 /* SFProDisplay-MediumItalic.otf */,
-				70C906A207C14D59A4E1375D /* SFProDisplay-Regular.otf */,
-				0A93ED916771476CBC172E5C /* SFProDisplay-RegularItalic.otf */,
-				21431FD8F69B4D75AA89EEC2 /* SFProDisplay-Semibold.otf */,
-				4E23423EDB274AD1AFE5A152 /* SFProDisplay-SemiboldItalic.otf */,
-				54BF7BA8CC524BD4A50C0817 /* SFProDisplay-Thin.otf */,
-				A005F947D8DA4B048B483C73 /* SFProDisplay-ThinItalic.otf */,
-				A505D6091B9D4911B63541A8 /* SFProDisplay-Ultralight.otf */,
-				AFE831C721D9415BAF895B00 /* SFProDisplay-UltralightItalic.otf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -609,6 +608,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = react_native_boilerplate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Boilerplate App";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,7 +619,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boilerplate;
 				PRODUCT_NAME = react_native_boilerplate;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -636,6 +636,7 @@
 				CODE_SIGN_ENTITLEMENTS = react_native_boilerplate/react_native_boilerplate.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = react_native_boilerplate/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Boilerplate App";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,7 +647,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boilerplate;
 				PRODUCT_NAME = react_native_boilerplate;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -731,7 +732,10 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
@@ -810,7 +814,10 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -1,0 +1,14 @@
+{
+  "Home": {
+    "title": "Modèle de Réact Native",
+    "welcome": "Bienvenue dans le modèle React Native ! Commencez à construire d'incroyables applications mobiles multiplateformes.",
+    "explore": "Explorez le code source, personnalisez les composants et tirez parti de fonctionnalités puissantes pour une expérience de développement transparente.",
+    "haveFun": "Amusez-vous à coder et à créer d'incroyables applications mobiles avec React Native !",
+    "changeLang": "Changer de Langue",
+    "toggleTheme": "Basculer le Thème"
+  },
+  "Auth": {
+    "continueWithFacebook": "Continuer avec Facebook",
+    "continueWithGoogle": "Continuer avec Google"
+  }
+}

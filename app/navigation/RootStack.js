@@ -1,18 +1,17 @@
-import {createStackNavigator} from '@react-navigation/stack';
-import {Screens} from 'Config';
-import React from 'react';
-import AuthStack from './AuthStack';
-import DrawerStack from './DrawerStack';
+import React from 'react'
+import { createStackNavigator } from '@react-navigation/stack'
+import { ScreenRoutes } from '../constants'
+import HomeScreen from 'containers/home'
+import AuthScreen from 'containers/auth'
 
-const RootStack = createStackNavigator();
-
-const AppNavigator = () => {
+const RootStack = createStackNavigator()
+const App = () => {
   return (
-    <RootStack.Navigator headerMode="none">
-      <RootStack.Screen name={Screens.authStack} component={AuthStack} />
-      <RootStack.Screen name={Screens.drawerStack} component={DrawerStack} />
+    <RootStack.Navigator screenOptions={{ headerShown: false }}>
+      <RootStack.Screen name={ScreenRoutes.auth} component={AuthScreen} />
+      <RootStack.Screen name={ScreenRoutes.home} component={HomeScreen} />
     </RootStack.Navigator>
-  );
-};
+  )
+}
 
-export default AppNavigator;
+export default App

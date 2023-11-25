@@ -1,3 +1,3 @@
-import AppNavigator from './RootStack';
+import AppNavigator from './rootStack'
 
-export default AppNavigator;
+export default AppNavigator

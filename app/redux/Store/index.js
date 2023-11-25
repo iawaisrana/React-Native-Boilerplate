@@ -1,27 +1,41 @@
-import AsyncStorage from '@react-native-community/async-storage';
-import {applyMiddleware, createStore} from 'redux';
-import {persistReducer, persistStore} from 'redux-persist';
-import createSagaMiddleware from 'redux-saga';
-// Imports: Redux Root Reducer
-import rootReducer from 'Redux/Reducers';
-// Imports: Redux Root Saga
-import rootSaga from 'Redux/Sagas';
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import { configureStore, combineReducers } from '@reduxjs/toolkit'
+import { persistReducer, persistStore } from 'redux-persist'
+import createSagaMiddleware from 'redux-saga'
+import rootSaga from '../sagas'
+import userReducer from './user/reducers'
+import startupReducer from './startup/reducers'
+import themeReducer from './theme/reducers'
+
+const rootReducer = combineReducers({
+  startup: startupReducer,
+  auth: userReducer,
+  theme: themeReducer,
+})
 
 const persistConfig = {
   key: 'root',
+  version: 1,
   storage: AsyncStorage,
-  blacklist: ['loading'],
-};
+}
 
-// Middleware: Redux Saga
-const sagaMiddleware = createSagaMiddleware();
-// persist
-const persistedReducer = persistReducer(persistConfig, rootReducer);
+const middleware = []
 
-// Redux: Store
-const store = createStore(persistedReducer, applyMiddleware(sagaMiddleware));
-const persistor = persistStore(store);
-// Middleware: Redux Saga
-sagaMiddleware.run(rootSaga);
-// Exports
-export {store, persistor};
+// Connect the sagas to the redux store
+const sagaMiddleware = createSagaMiddleware()
+middleware.push(sagaMiddleware)
+
+// Redux persist
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+
+const store = configureStore({
+  reducer: persistedReducer,
+  middleware,
+})
+
+const persistor = persistStore(store)
+
+// Kick off the root saga
+sagaMiddleware.run(rootSaga)
+
+export { store, persistor }

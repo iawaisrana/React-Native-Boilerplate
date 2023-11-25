@@ -1,0 +1,14 @@
+{
+  "Home": {
+    "title": "React Native Boilerplate",
+    "welcome": "Welcome to the React Native Boilerplate! Get started with building amazing cross-platform mobile apps.",
+    "explore": "Explore the codebase, customize components, and leverage powerful features for a seamless development experience.",
+    "haveFun": "Have fun coding and creating incredible mobile applications using React Native!",
+    "changeLang": "Change Language",
+    "toggleTheme": "Toggle Theme"
+  },
+  "Auth": {
+    "continueWithFacebook": "Continue with Facebook",
+    "continueWithGoogle": "Continue with Google"
+  }
+}
