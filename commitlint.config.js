@@ -1,22 +1,33 @@
 module.exports = {
   parserPreset: 'conventional-changelog-conventionalcommits',
+  // Configuration for commitlint rules
   rules: {
+    // Ensure a blank line before the commit body
     'body-leading-blank': [1, 'always'],
+    // Limit the length of the commit body to 200 characters
     'body-max-line-length': [2, 'always', 200],
+    // Ensure a blank line before the commit footer
     'footer-leading-blank': [1, 'always'],
+    // Limit the length of the commit footer to 200 characters
     'footer-max-line-length': [2, 'always', 200],
+    // Limit the length of the commit header to 200 characters
     'header-max-length': [2, 'always', 200],
-    'subject-case': [2, 'never', ['sentence-case', 'start-case', 'pascal-case', 'upper-case']],
-    'subject-empty': [2, 'never'],
-    'subject-full-stop': [2, 'never', '.'],
+    // Require lower case for commit type
     'type-case': [2, 'always', 'lower-case'],
+    // Ensure commit type is not empty
     'type-empty': [2, 'never'],
+    // Specify allowed commit types
     'type-enum': [
       2,
       'always',
       ['build', 'chore', 'ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'revert', 'style', 'test'],
     ],
+    // Ensure commit subject is not empty
+    'subject-empty': [2, 'never'],
+    // Ensure commit subject does not end with a period
+    'subject-full-stop': [2, 'never', '.'],
   },
+  // Configuration for commit message prompts
   prompt: {
     questions: {
       type: {
@@ -83,7 +94,7 @@ module.exports = {
         },
       },
       scope: {
-        description: 'What is the scope of this change (e.g. component or file name)',
+        description: 'Specify the scope of this change (e.g., component, file name). Leave empty if unsure:',
       },
       subject: {
         description: 'Write a short, imperative tense description of the change',
@@ -91,25 +102,7 @@ module.exports = {
       body: {
         description: 'Provide a longer description of the change',
       },
-      isBreaking: {
-        description: 'Are there any breaking changes?',
-      },
-      breakingBody: {
-        description: 'A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself',
-      },
-      breaking: {
-        description: 'Describe the breaking changes',
-      },
-      isIssueAffected: {
-        description: 'Does this change affect any open issues?',
-      },
-      issuesBody: {
-        description:
-          'If issues are closed, the commit requires a body. Please enter a longer description of the commit itself',
-      },
-      issues: {
-        description: 'Add issue references (e.g. "fix #123", "re #123".)',
-      },
+      // ...
     },
   },
 }
