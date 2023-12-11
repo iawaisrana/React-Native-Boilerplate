@@ -4,18 +4,18 @@
     <img src="app/assets/images/logo.png" alt="Logo" width="100%">
 </div>
 
-[![Release Date](https://img.shields.io/badge/Release%20Date-May%202020-green.svg)](https://shields.io/)
-[![Version](https://img.shields.io/badge/Version-v2.0.0-green.svg)](https://shields.io/)
-[![TypeScript Support](https://img.shields.io/badge/Typescript%20Support-Yes-green.svg)](https://shields.io/)
-[![Dark Theme Setup](https://img.shields.io/badge/Theme%20Configured-Yes-green.svg)](https://shields.io/)
-[![Firebase](https://img.shields.io/badge/Firebase-Yes-green.svg)](https://shields.io/)
-[![Code-Push Integrated](https://img.shields.io/badge/Code%20Push%20Integrated-Yes-green.svg)](https://shields.io/)
-[![Push Notifications](https://img.shields.io/badge/Push%20Notifications%20Configured-Yes-green.svg)](https://shields.io/)
-[![Redux](https://img.shields.io/badge/Redux-Yes-green.svg)](https://shields.io/)
-[![Offline Storage](https://img.shields.io/badge/Data%20Persist-Yes-green.svg)](https://shields.io/)
-[![Splash Screen](https://img.shields.io/badge/Splash%20Screen-Yes-green.svg)](https://shields.io/)
-[![Multilingual Support](https://img.shields.io/badge/Multilingual%20Support-Yes-green.svg)](https://shields.io/)
-[![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://shields.io/)
+[![Release Date](https://img.shields.io/badge/Release%20Date-May%202020-success.svg)](https://shields.io/)
+[![Version](https://img.shields.io/badge/Version-v1.0.0-success.svg)](https://shields.io/)
+[![TypeScript Support](https://img.shields.io/badge/TypeScript%20Support-Yes-success.svg)](https://shields.io/)
+[![Dark Theme Setup](https://img.shields.io/badge/Dark%20Theme%20Configured-Yes-success.svg)](https://shields.io/)
+[![Firebase](https://img.shields.io/badge/Firebase-Yes-success.svg)](https://shields.io/)
+[![Code-Push Integrated](https://img.shields.io/badge/Code%20Push%20Integrated-Yes-success.svg)](https://shields.io/)
+[![Push Notifications](https://img.shields.io/badge/Push%20Notifications%20Configured-Yes-success.svg)](https://shields.io/)
+[![Redux](https://img.shields.io/badge/Redux-Yes-success.svg)](https://shields.io/)
+[![Offline Storage](https://img.shields.io/badge/Offline%20Storage-Yes-success.svg)](https://shields.io/)
+[![Splash Screen](https://img.shields.io/badge/Splash%20Screen-Yes-success.svg)](https://shields.io/)
+[![Multilingual Support](https://img.shields.io/badge/Multilingual%20Support-Yes-success.svg)](https://shields.io/)
+[![Maintained](https://img.shields.io/badge/Maintained%3F-Yes-success.svg)](https://shields.io/)
 
 ## Overview
 
