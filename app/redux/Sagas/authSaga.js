@@ -12,7 +12,7 @@ export function* googleLoginSaga() {
 
     yield put(AuthActions.googleLoginSuccess({ user }))
 
-    NavigationService.navigate(ScreenRoutes.home)
+    NavigationService.navigateAndReplace(ScreenRoutes.home)
 
     // const response = yield call(GoogleService.signInAsync)
 

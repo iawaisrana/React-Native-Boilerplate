@@ -1,4 +1,4 @@
-import { CommonActions } from '@react-navigation/native'
+import { CommonActions, StackActions } from '@react-navigation/native'
 
 let navigator
 
@@ -15,6 +15,14 @@ function navigate(routeName, params) {
   )
 }
 
+function navigateAndReplace(routeName, params) {
+  navigator.dispatch(
+    StackActions.replace(routeName, {
+      params,
+    })
+  )
+}
+
 function goBack(key) {
   navigator.dispatch(
     CommonActions.back({
@@ -25,6 +33,7 @@ function goBack(key) {
 
 export default {
   navigate,
+  navigateAndReplace,
   goBack,
   setTopLevelNavigator,
 }

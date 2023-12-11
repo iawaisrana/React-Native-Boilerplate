@@ -12,7 +12,7 @@ export function* startupSaga() {
   const isUserLoggedIn = !_.isEmpty(user.accessToken)
 
   if (isUserLoggedIn) {
-    NavigationService.navigate(ScreenRoutes.home)
+    NavigationService.navigateAndReplace(ScreenRoutes.home)
   } else {
     NavigationService.navigate(ScreenRoutes.auth)
   }
